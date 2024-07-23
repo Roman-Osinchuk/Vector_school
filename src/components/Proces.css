@@ -1,0 +1,255 @@
+* {
+ 
+    margin: 0;
+    padding: 0;
+  }
+  
+  .sectionProces {
+    text-align: center;
+    background-color: rgba(33,100,174);
+    color: white;
+  }
+  
+  .sectionProces h1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 2em;
+  }
+  
+  .steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .step {
+
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .step img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid rgba(33,100,174, 1);
+    box-shadow: 0 0 0 5px white;
+  }
+  
+  .bubble-background {
+   
+    background-image: radial-gradient(circle, rgba(228, 224, 224, 0.911) 1px, transparent 1px);
+    background-size: 10px 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 50%;
+    width: 240px; /* Задайте ширину контейнера */
+    height: 260px; /* Задайте висоту контейнера */
+  }
+  .step-number {
+    background-color: #A1CF45;
+    color: #1E6DAB;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .step h3 {
+    margin: 15px 0;
+    font-size: 1.2em;
+  }
+  
+  .step p {
+    font-size: 1em;
+  }
+  .sectionReviewWrapper {
+    width: 100%;
+    background-color: #cfd9e6;
+    padding: 20px 0;
+    color: #000000;
+  }
+  
+  .sectionReview {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .sectionReview h1{
+    font-size: 3em;
+    margin-right: 60%;
+  }
+  .review {
+    
+    padding: 20px;
+    max-width: 350px;
+    height: 250px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    margin: 10px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .review:hover {
+    transform: translateY(-10px);
+    
+  }
+  
+  .review-image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .review img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid rgba(33, 100, 174, 1);
+    box-shadow: 0 0 0 5px #bfff31;
+  }
+  
+  .review h3 {
+    font-size: 1.4em;
+    color: #000000;
+    margin-bottom: 15px;
+  }
+  
+  .review p {
+    font-size: 1.1em;
+    color: #000000;
+    line-height: 1.4;
+  }
+  
+  
+  
+  
+  @media (max-width: 768px) {
+    
+  .steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    width: 250px;
+    margin-left: auto;
+    margin-right:30%;
+  }
+  
+  .step {
+    border-radius: 10px;
+    width: 70px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .step img {
+    width: 100px;
+   height: 80px;
+    border-radius: 50%;
+    border: 5px solid rgba(33,100,174, 1);
+    box-shadow: 0 0 0 5px white;
+  }
+  
+  .bubble-background {
+   
+    background-image: radial-gradient(circle, rgba(228, 224, 224, 0.911) 1px, transparent 1px);
+    background-size: 10px 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 50%;
+    width: 100px; /* Задайте ширину контейнера */
+    height: 90px; /* Задайте висоту контейнера */
+  }
+  .step-number {
+    background-color: #A1CF45;
+    color: #1E6DAB;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    position: absolute;
+    top: -30px;
+    left: 100%;
+    transform: translateX(-50%);
+  }
+  
+  .step h3 {
+    margin: 15px 0;
+    font-size: 1.2em;
+    width: 150px;
+  }
+  
+  .step p {
+    font-size: 1em;
+    width: 160px;
+  }
+  .sectionReviewWrapper {
+    width: 100%;
+    background-color: #cfd9e6;
+    padding: 20px 0;
+    color: #000000;
+  }
+  
+  .sectionReview {
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .sectionReview h1{
+    font-size: 3em;
+    margin-right: 60%;
+  }
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+  }
+
+  .review {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .review img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .review h3 {
+    font-size: 1.2em;
+  }
+
+  .review p {
+    font-size: 1em;
+  }
+  }
+  
+
+  
+  
