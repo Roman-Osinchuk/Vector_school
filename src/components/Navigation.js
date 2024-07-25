@@ -56,7 +56,7 @@ const Navigation = () => {
         <li><a href="#about" onClick={toggleMenu}>ПРО НАС</a></li>
         <li><a href="#course" onClick={toggleMenu}>КУРСИ</a></li>
         <li><a href="#proces" onClick={toggleMenu}>ПРОЦЕС НАВЧАННЯ</a></li>
-        <li><a href="#webinars" onClick={toggleMenu}>ВЕБІНАРИ</a></li>
+        <li><a href="#webinar" onClick={toggleMenu}>ВЕБІНАРИ</a></li>
         <li><a href="#contacts" onClick={toggleMenu}>КОНТАКТИ</a></li>
       </ul>
       <a href="tel:+380673825500" className="phone-number-link">

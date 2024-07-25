@@ -1,5 +1,5 @@
 * {
- 
+
     margin: 0;
     padding: 0;
   }
@@ -81,7 +81,7 @@
   }
   .sectionReviewWrapper {
     width: 100%;
-    background-color: #cfd9e6;
+    background-color: #e2e8f0;
     padding: 20px 0;
     color: #000000;
   }
@@ -142,112 +142,113 @@
   
   
   
-  
   @media (max-width: 768px) {
+    .steps {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 100px;
+      width: 250px;
+      margin-left: auto;
+      margin-right: 30%;
+    }
     
-  .steps {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 100px;
-    width: 250px;
-    margin-left: auto;
-    margin-right:30%;
-  }
+    .step {
+      border-radius: 10px;
+      width: 70px;
+      text-align: center;
+      position: relative;
+    }
+    
+    .step img {
+      margin-left: 40px;
+      width: 70px;
+      height: 60px;
+      border-radius: 50%;
+      box-shadow: 0 0 0 5px white;
+    }
+    
+    .bubble-background {
+      background-image: radial-gradient(circle, rgba(189, 189, 189, 0.911) 1px, transparent 1px);
+      background-size: 10px 10px; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      border-radius: 50%;
+      width: 100px;
+      height: 90px;
+    }
+    
+    .step-number {
+      background-color: #A1CF45;
+      color: #1E6DAB;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2em;
+      position: absolute;
+      top: -30px;
+      left: 130%;
+      transform: translateX(-50%);
+    }
+    
+    .step h3 {
+      margin: 15px 0;
+      font-size: 1.2em;
+      width: 150px;
+    }
+    
+    .step p {
+      font-size: 1em;
+      width: 160px;
+    }
+    .sectionReviewWrapper {
+      width: 100%;
+      background-color:  #e2e8f0;
+      padding: 20px 0;
+      color: #000000;
+    }
   
-  .step {
-    border-radius: 10px;
-    width: 70px;
-    text-align: center;
-    position: relative;
-  }
+    .sectionReview {
+      max-width: 90%;
+      margin: 0 auto;
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
   
-  .step img {
-    width: 100px;
-   height: 80px;
-    border-radius: 50%;
-    border: 5px solid rgba(33,100,174, 1);
-    box-shadow: 0 0 0 5px white;
-  }
+    .slick-slide {
+      display: flex;
+      justify-content: center;
+    }
   
-  .bubble-background {
+    .review {
+      max-width: 90%; /* Повний екран */
+      padding: 15px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
    
-    background-image: radial-gradient(circle, rgba(228, 224, 224, 0.911) 1px, transparent 1px);
-    background-size: 10px 10px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    border-radius: 50%;
-    width: 100px; /* Задайте ширину контейнера */
-    height: 90px; /* Задайте висоту контейнера */
-  }
-  .step-number {
-    background-color: #A1CF45;
-    color: #1E6DAB;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2em;
-    position: absolute;
-    top: -30px;
-    left: 100%;
-    transform: translateX(-50%);
-  }
+    }
   
-  .step h3 {
-    margin: 15px 0;
-    font-size: 1.2em;
-    width: 150px;
-  }
+    .review img {
+      width: 40px;
+      height: 40px;
+    }
   
-  .step p {
-    font-size: 1em;
-    width: 160px;
-  }
-  .sectionReviewWrapper {
-    width: 100%;
-    background-color: #cfd9e6;
-    padding: 20px 0;
-    color: #000000;
-  }
+    .review h3 {
+      font-size: 1.2em;
+    }
   
-  .sectionReview {
-    max-width: 70%;
-    margin: 0 auto;
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-  .sectionReview h1{
-    font-size: 3em;
-    margin-right: 60%;
-  }
-  .slick-slide {
-    display: flex;
-    justify-content: center;
-  }
-
-  .review {
-    max-width: 100%;
-    padding: 15px;
-  }
-
-  .review img {
-    width: 40px;
-    height: 40px;
-  }
-
-  .review h3 {
-    font-size: 1.2em;
-  }
-
-  .review p {
-    font-size: 1em;
-  }
+    .review p {
+      font-size: 1em;
+    }
   }
   
 

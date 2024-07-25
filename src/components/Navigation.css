@@ -103,7 +103,7 @@
     content: '';
     position: absolute;
     top: 50%;
-    left: 5%;
+    left: 6%;
     width: 35px;
     height: 35px;
     background-color: #bfff31;
@@ -250,6 +250,7 @@
   
   .nav {
     display: flex;
+    height: 70px;
     justify-content: space-between;
     align-items: center;
     position: fixed;
@@ -285,8 +286,8 @@
     height: 40px;
     z-index: 1001;
     cursor: pointer;
-    margin-left: auto; /* Розміщуємо зправа */
-    margin-right: 10px; /* Відступ справа */
+    margin-left: 5%; /* Розміщуємо зправа */
+    margin-right: 5%; /* Відступ справа */
   }
 
   .burger-menu .bar1,

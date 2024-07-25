@@ -5,6 +5,7 @@ import About from './components/About';
 import Navigation from './components/Navigation';
 import Course from './components/Course';
 import Proces from './components/Proces';
+import Webinars from './components/Webinars';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <About />
       <Course/>
       <Proces/>
+      <Webinars/>
     </div>
   );
 }
