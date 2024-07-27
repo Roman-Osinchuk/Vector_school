@@ -6,6 +6,7 @@ import Navigation from './components/Navigation';
 import Course from './components/Course';
 import Proces from './components/Proces';
 import Webinars from './components/Webinars';
+import Contacts from './components/Contacts';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Course/>
       <Proces/>
       <Webinars/>
+      <Contacts/>
     </div>
   );
 }

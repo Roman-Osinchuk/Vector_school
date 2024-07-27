@@ -12,6 +12,7 @@ body {
 }
 
 .sectionWebinars h1 {
+    margin-top: 80px;
     font-size: 2.5em;
     margin-bottom: 20px;
 }
@@ -103,7 +104,7 @@ body {
 
 
 .next-quesh {
-    margin-top: 150px;
+    margin-top: 40px;
     background-image: url('./img/webinars_img/question-bg.png');
     width: 100%;
     height: 20vh;
