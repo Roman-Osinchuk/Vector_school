@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Modul.css';
+import './Modal.css';
 
 const Modal = ({ isOpen, onClose }) => {
   const [name, setName] = useState('');
@@ -35,11 +35,15 @@ const Modal = ({ isOpen, onClose }) => {
 
   return (
     <div className="modal-overlay" onClick={onClose}>
+     
       <div className="modal" onClick={(e) => e.stopPropagation()}>
-        <span className="close" onClick={onClose}>&times;</span>
-        <h2>ВИНИКЛИ <br></br>ЗАПИТАННЯ?</h2>
+        
+        
+        
         <form onSubmit={handleSubmit}>
           <div className="form-group">
+          <span className="close" onClick={onClose}>&times;</span>
+          <h2>ВИНИКЛИ ЗАПИТАННЯ?</h2>
             <label htmlFor="name"></label>
             <input
               type="text"
@@ -88,6 +92,7 @@ const Modal = ({ isOpen, onClose }) => {
             ></textarea>
           </div>
           <button type="submit" className="submit-btn" disabled={!isFormValid}>Відправити</button>
+         
         </form>
       </div>
     </div>

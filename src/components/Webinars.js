@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Webinars.css';
-import JavaImage from './img/webinars_img/webinar-first.png';  // Заміни на правильний шлях
-import WebDevImage from './img/webinars_img/webinar.png';  // Заміни на правильний шлях
+import JavaImage from './img/webinars_img/webinar-first.png';  
+import WebDevImage from './img/webinars_img/webinar.png'; 
+import Modal from './Modal';
 
 const Webinars = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+  };
+
   return (
     <section id="webinar" className="sectionWebinars">
       <h1>НАШІ ВЕБІНАРИ</h1>
@@ -36,13 +43,14 @@ const Webinars = () => {
         </div>
       </div>
       <div className="next-webinar">
-    <p>НЕ ВИХОДИТЬ У ЦЕЙ ДЕНЬ І ЧАС?<br /> <span className='tex'>ЗАПИШИСЬ</span> НА НАСТУПНИЙ МАСТЕР-КЛАС!</p>
-    <button className="previous-button">Передзвоніть мені</button>
-</div>
-<div className="next-quesh">
-    <p>ЗАЛИШИЛИСЬ ПИТАННЯ?<br /> НАПИШІТЬ НАМ ТА ОТРИМАЙТЕ КОНСУЛЬТАЦІЮ</p>
-    <button className="previous-buttn">Написати</button>
-</div>
+        <p>НЕ ВИХОДИТЬ У ЦЕЙ ДЕНЬ І ЧАС?<br /> <span className='tex'>ЗАПИШИСЬ</span> НА НАСТУПНИЙ МАСТЕР-КЛАС!</p>
+        <button className="previous-button">Передзвоніть мені</button>
+      </div>
+      <div className="next-quesh">
+        <p>ЗАЛИШИЛИСЬ ПИТАННЯ?<br /> НАПИШІТЬ НАМ ТА ОТРИМАЙТЕ КОНСУЛЬТАЦІЮ</p>
+        <button onClick={toggleModal} className="previous-buttn">Написати</button>
+      </div>
+      <Modal isOpen={isModalOpen} onClose={toggleModal} />
     </section>
   );
 }

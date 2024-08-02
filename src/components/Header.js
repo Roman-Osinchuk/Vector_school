@@ -11,14 +11,6 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  const toggleModal = () => {
-    setIsModalOpen(!isModalOpen);
-  };
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 5) {
@@ -34,10 +26,13 @@ const Header = () => {
     };
   }, []);
 
+  const handleLearnMoreClick = () => {
+    window.scrollBy({ top: 3000, behavior: 'smooth' });
+  };
+
   return (
     <header className="header">
       
-
       <div className="online-education">
         <h2>ОНЛАЙН ОСВІТА</h2>
         <p className="education-text">
@@ -45,14 +40,12 @@ const Header = () => {
           <b>Час освоювати актуальну професію,</b> <br />
           яка подбає про стабільне успішне майбутнє вашої дитини!
         </p>
-        <button className="learn-more-btn">Дізнатись більше</button>
+        <button className="learn-more-btn" onClick={handleLearnMoreClick}>Дізнатись більше</button>
       </div>
 
       <div className="education-footer">
         <p>ОСВІТА РАЗОМ ІЗ НАВЧАЛЬНИМ ПРОСТОРОМ VECTOR — ЦЕ ПРАВИЛЬНИЙ ВИБІР ТА ВІДМІННИЙ РЕЗУЛЬТАТ!</p>
       </div>
-
-      <Modal isOpen={isModalOpen} onClose={toggleModal} />
     </header>
   );
 }

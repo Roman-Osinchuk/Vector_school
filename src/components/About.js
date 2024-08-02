@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';  
 import './About.css';
 import certificationImg from './img/about_img/diploma.svg';
 import mentorsImg from './img/about_img/teachers-2.svg';
@@ -7,8 +7,19 @@ import graduatesImg from './img/about_img/student.svg';
 import vector from './img/about_img/about-v.png'; 
 import comput from './img/about_img/proposal-img.png'; 
 import audience from './img/about_img/audience.png';
+import Choice from './Choice.js';
 
 const About = () => {
+  const [showChoice, setShowChoice] = useState(false);
+
+  const handleOpenChoice = () => {
+    setShowChoice(true);
+  };
+
+  const handleCloseChoice = () => {
+    setShowChoice(false);
+  };
+
   return (
     <section id="about" className="sectionAbout">
       <div className="section-content1">
@@ -73,7 +84,7 @@ const About = () => {
           ></iframe>
         </div>
         <div className="video-right">
-          <h2>ОТОЖ, ДОВІРЯЙТЕ ДОСВІДУ І ПРОФЕСІОНАЛІЗМУ!ЗАПИСУЙТЕСЬ НА МАЙСТЕР-КЛАС ВЖЕ СЬОГОДНІ.</h2>
+          <h2>ОТОЖ, ДОВІРЯЙТЕ ДОСВІДУ І ПРОФЕСІОНАЛІЗМУ! ЗАПИСУЙТЕСЬ НА МАЙСТЕР-КЛАС ВЖЕ СЬОГОДНІ.</h2>
           <ul>
             <li>ознайомиться з основними напрямами онлайн курсу і форматом навчання;</li>
             <li>зрозуміє процес і основні принципи програмування (java) або сайтів (web-розробка);</li>
@@ -81,24 +92,24 @@ const About = () => {
             <li>створить свою міні-гру (java) або напише свою першу власну інтернет-сторінку (web-розробка);</li>
             <li>після майстер-класу ментор під'єднається до вашої дитини та в телефонному режимі покаже всі помилки і пояснить чому вони виникли.</li>
           </ul>
-          <button className="sign-up-button">Записатись</button>
+          <button className="sign-up-button" onClick={handleOpenChoice}>Записатись</button>
         </div>
       </div>
 
-     <div className='tit'><h2>ДЛЯ КОГО?</h2></div> 
-       <div className="target-audience">
-    
-    <div className="target-content">
-      <div className="target-left">
-        <img src={audience} alt="Для кого" />
+      <div className='tit'><h2>ДЛЯ КОГО?</h2></div> 
+      <div className="target-audience">
+        <div className="target-content">
+          <div className="target-left">
+            <img src={audience} alt="Для кого" />
+          </div>
+          <div className="target-right">
+            <h2>ДЛЯ ДІТЕЙ ВІКОМ ВІД 12 ДО 18 РОКІВ</h2>
+            <p>Програми курсів по Java та WEB-розробці розроблені таким чином, що в одній групі можуть навчатись діти різного віку.</p>
+          </div>
+        </div>
       </div>
-      <div className="target-right">
-        <h2>ДЛЯ ДІТЕЙ ВІКОМ ВІД 12 ДО 18 РОКІВ</h2>
-        <p>Програми курсів по Java та WEB-розробці розроблені таким чином, що в одній групі можуть навчатись діти різного віку.</p>
-      </div>
-    </div>
-  </div>
       
+      <Choice isOpen={showChoice} onClose={handleCloseChoice} />
     </section>
   );
 }
