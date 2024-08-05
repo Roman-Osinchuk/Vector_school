@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/Vector_school/static/css/main.554b500d.css",
-    "main.js": "/Vector_school/static/js/main.a5b048c4.js",
+    "main.css": "/Vector_school/static/css/main.45eca4b5.css",
+    "main.js": "/Vector_school/static/js/main.3a9479f0.js",
     "static/media/java-bg.png": "/Vector_school/static/media/java-bg.3e799010433f66148718.png",
     "static/media/index-intro-3.jpg": "/Vector_school/static/media/index-intro-3.9103c34858a9a474a702.jpg",
+    "static/media/webinar.png": "/Vector_school/static/media/webinar.3285128a41357b52091a.png",
     "static/media/p-6.png": "/Vector_school/static/media/p-6.0d635f029bae67bfd0c0.png",
     "static/media/audience.png": "/Vector_school/static/media/audience.405c6669236739013c53.png",
     "static/media/about-v.png": "/Vector_school/static/media/about-v.797308e1bd523132733f.png",
@@ -13,9 +14,12 @@
     "static/media/p-1.png": "/Vector_school/static/media/p-1.79b19aa4112585c3f93d.png",
     "static/media/ja-master.png": "/Vector_school/static/media/ja-master.9663bd3b54cba1d9acf8.png",
     "static/media/p-2.png": "/Vector_school/static/media/p-2.02ee3d3a09fcebe3baef.png",
+    "static/media/question-bg.png": "/Vector_school/static/media/question-bg.2a2400a44546afaa933f.png",
     "static/media/proposal-img.png": "/Vector_school/static/media/proposal-img.864bce0f84f16c69973e.png",
+    "static/media/webinar-first.png": "/Vector_school/static/media/webinar-first.f1b5435d8f0f905f608f.png",
     "static/media/teachers-2.svg": "/Vector_school/static/media/teachers-2.5420c0f18615ddc7e4cec7147d06522b.svg",
     "static/media/student.svg": "/Vector_school/static/media/student.0a933ddaf4428b0882b82f84680fbb4e.svg",
+    "static/media/instagram-2.svg": "/Vector_school/static/media/instagram-2.7864392f8bf46cfad3d009a87f2b0354.svg",
     "static/media/appraisal-form.svg": "/Vector_school/static/media/appraisal-form.83a5f2156b6e76568f7d49eeb3cb5331.svg",
     "static/media/diploma.svg": "/Vector_school/static/media/diploma.cd209178b27977aaf9c9d1771d0a89e9.svg",
     "static/media/slick.svg": "/Vector_school/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -23,14 +27,19 @@
     "static/media/viber-1.svg": "/Vector_school/static/media/viber-1.8ec417d41299cdc7a182816c25192f56.svg",
     "static/media/slick.ttf": "/Vector_school/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Vector_school/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/email.svg": "/Vector_school/static/media/email.83792d316092fb38c1d4f481e42a1984.svg",
     "static/media/phone-call.svg": "/Vector_school/static/media/phone-call.b317c6ce1d7f6b097689ddffe1ebcec0.svg",
+    "static/media/clock.svg": "/Vector_school/static/media/clock.396d5a540cf515ec5b343991bf7dd4f6.svg",
     "index.html": "/Vector_school/index.html",
+    "static/media/placeholder.svg": "/Vector_school/static/media/placeholder.f8e6a747acf9c5ab46ac236e526807ab.svg",
+    "static/media/youtube-1.svg": "/Vector_school/static/media/youtube-1.4b22338520c04fcd7f23b0ae151c7b91.svg",
     "static/media/mesenger-2.svg": "/Vector_school/static/media/mesenger-2.3506d76098ce8768127451fa26002354.svg",
-    "main.554b500d.css.map": "/Vector_school/static/css/main.554b500d.css.map",
-    "main.a5b048c4.js.map": "/Vector_school/static/js/main.a5b048c4.js.map"
+    "static/media/facebook-1.svg": "/Vector_school/static/media/facebook-1.dc1f56fcb1fc0353f8cfe8d544b18540.svg",
+    "main.45eca4b5.css.map": "/Vector_school/static/css/main.45eca4b5.css.map",
+    "main.3a9479f0.js.map": "/Vector_school/static/js/main.3a9479f0.js.map"
   },
   "entrypoints": [
-    "static/css/main.554b500d.css",
-    "static/js/main.a5b048c4.js"
+    "static/css/main.45eca4b5.css",
+    "static/js/main.3a9479f0.js"
   ]
 }
