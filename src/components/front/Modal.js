@@ -8,16 +8,29 @@ const Modal = ({ isOpen, onClose }) => {
   const [comment, setComment] = useState('');
   const [isFormValid, setIsFormValid] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    console.log('Форма відправлена з наступними даними:', { name, phone, email, comment });
+    try {
+      const response = await fetch('http://localhost:5000/submit-form', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name, phone, email, comment }),
+      });
 
-    setName('');
-    setPhone('');
-    setEmail('');
-    setComment('');
-    onClose();
+      const result = await response.json();
+      console.log('Response from server:', result);
+      
+      setName('');
+      setPhone('');
+      setEmail('');
+      setComment('');
+      onClose();
+    } catch (error) {
+      console.error('Error submitting form:', error);
+    }
   };
 
   const handleInputChange = (e) => {
@@ -35,15 +48,11 @@ const Modal = ({ isOpen, onClose }) => {
 
   return (
     <div className="modal-overlay" onClick={onClose}>
-     
       <div className="modal" onClick={(e) => e.stopPropagation()}>
-        
-        
-        
         <form onSubmit={handleSubmit}>
           <div className="form-group">
-          <span className="close" onClick={onClose}>&times;</span>
-          <h2>ВИНИКЛИ ЗАПИТАННЯ?</h2>
+            <span className="close" onClick={onClose}>&times;</span>
+            <h2>ВИНИКЛИ ЗАПИТАННЯ?</h2>
             <label htmlFor="name"></label>
             <input
               type="text"
@@ -92,7 +101,6 @@ const Modal = ({ isOpen, onClose }) => {
             ></textarea>
           </div>
           <button type="submit" className="submit-btn" disabled={!isFormValid}>Відправити</button>
-         
         </form>
       </div>
     </div>

@@ -3,15 +3,15 @@ import './Proces.css';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import Image1 from './img/proces_img/p-1.png';
-import Image2 from './img/proces_img/p-2.png';
-import Image3 from './img/proces_img/p-3.png';
-import Image4 from './img/proces_img/p-4.png';
-import Image5 from './img/proces_img/p-5.png';
-import Image6 from './img/proces_img/p-6.png';
-import Review1 from './img/proces_img/ja-master.png';
-import Review2 from './img/proces_img/ja-master.png';
-import Review3 from './img/proces_img/ja-master.png';
+import Image1 from '../img/proces_img/p-1.png';
+import Image2 from '../img/proces_img/p-2.png';
+import Image3 from '../img/proces_img/p-3.png';
+import Image4 from '../img/proces_img/p-4.png';
+import Image5 from '../img/proces_img/p-5.png';
+import Image6 from '../img/proces_img/p-6.png';
+import Review1 from '../img/proces_img/ja-master.png';
+import Review2 from '../img/proces_img/ja-master.png';
+import Review3 from '../img/proces_img/ja-master.png';
 
 const Proces = () => {
   const steps = [

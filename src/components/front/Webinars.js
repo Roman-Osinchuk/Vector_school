@@ -1,14 +1,20 @@
 import React, { useState } from 'react';
 import './Webinars.css';
-import JavaImage from './img/webinars_img/webinar-first.png';  
-import WebDevImage from './img/webinars_img/webinar.png'; 
+import JavaImage from '../img/webinars_img/webinar-first.png';  
+import WebDevImage from '../img/webinars_img/webinar.png'; 
 import Modal from './Modal';
+import Zapis from './Zapis';
 
 const Webinars = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isZapisOpen, setIsZapisOpen] = useState(false);
 
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
+  };
+
+  const toggleZapis = () => {
+    setIsZapisOpen(!isZapisOpen);
   };
 
   return (
@@ -26,7 +32,7 @@ const Webinars = () => {
             <li>створить свою міні-гру;</li>
             <li>після майстер-класу ментор підключиться до вашої дитини та у телефонному режимі покаже всі помилки та пояснить чому вони виникли.</li>
           </ul>
-          <button className="sign-up-button">Записатись</button>
+          <button onClick={toggleZapis} className="sign-up-button">Записатись</button>
         </div>
         <div className="webinar-card">
           <div className="webinar-date">9-2-2024</div>
@@ -39,18 +45,19 @@ const Webinars = () => {
             <li>напише свою першу власну інтернет-сторінку;</li>
             <li>після майстер-класу ментор підключиться до вашої дитини та у телефонному режимі покаже всі помилки та пояснить чому вони виникли.</li>
           </ul>
-          <button className="sign-up-button">Записатись</button>
+          <button onClick={toggleZapis} className="sign-up-button">Записатись</button>
         </div>
       </div>
       <div className="next-webinar">
         <p>НЕ ВИХОДИТЬ У ЦЕЙ ДЕНЬ І ЧАС?<br /> <span className='tex'>ЗАПИШИСЬ</span> НА НАСТУПНИЙ МАСТЕР-КЛАС!</p>
-        <button className="previous-button">Передзвоніть мені</button>
+        <button onClick={toggleZapis} className="previous-button">Передзвоніть мені</button>
       </div>
       <div className="next-quesh">
         <p>ЗАЛИШИЛИСЬ ПИТАННЯ?<br /> НАПИШІТЬ НАМ ТА ОТРИМАЙТЕ КОНСУЛЬТАЦІЮ</p>
         <button onClick={toggleModal} className="previous-buttn">Написати</button>
       </div>
       <Modal isOpen={isModalOpen} onClose={toggleModal} />
+      <Zapis isOpen={isZapisOpen} onClose={toggleZapis} />
     </section>
   );
 }

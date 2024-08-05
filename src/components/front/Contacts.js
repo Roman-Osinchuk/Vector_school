@@ -1,15 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Contacts.css';
-import logo from './img/header_img/logo.png';
-import { ReactComponent as FacebookIcon } from './img/about_img/facebook-1.svg';
-import { ReactComponent as InstagramIcon } from './img/about_img/instagram-2.svg';
-import { ReactComponent as YouTubeIcon } from './img/about_img/youtube-1.svg';
-import locationIcon from './img/contacts_img/placeholder.svg'; 
-import phoneIcon from './img/contacts_img/phone-call.svg'; 
-import clockIcon from './img/contacts_img/clock.svg'; 
-import emailIcon from './img/contacts_img/email.svg'; 
+import logo from '../img/header_img/logo.png';
+import { ReactComponent as FacebookIcon } from '../img/about_img/facebook-1.svg';
+import { ReactComponent as InstagramIcon } from '../img/about_img/instagram-2.svg';
+import { ReactComponent as YouTubeIcon } from '../img/about_img/youtube-1.svg';
+import locationIcon from '../img/contacts_img/placeholder.svg'; 
+import phoneIcon from '../img/contacts_img/phone-call.svg'; 
+import clockIcon from '../img/contacts_img/clock.svg'; 
+import emailIcon from '../img/contacts_img/email.svg'; 
+import RekvizytyModal from './Rekvizit'; 
 
 const Contacts = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
   return (
     <section id="contacts" className="sectionContacts">
       <div className="background-circle"></div> 
@@ -20,9 +26,11 @@ const Contacts = () => {
           <p><img src={phoneIcon} alt="Phone icon" className="contact-icon" /> +380673825500</p>
           <p><img src={clockIcon} alt="Clock icon" className="contact-icon" /> Пн-Нд: 10:00 - 18:00</p>
           <p><img src={emailIcon} alt="Email icon" className="contact-icon" /> sales@vector.com.ua</p>
-          <button className="rekvizyty-btn">Реквізити</button>
-          <p>Умови надання послуг та повернення коштів</p>
-          <p>Договір Веб розробка</p>
+          <button className="rekvizyty-btn" onClick={openModal}>Реквізити</button>
+          <div className="links-container">
+            <a href="https://vector-school.online/%D1%83%D0%BC%D0%BE%D0%B2%D0%B8-%D0%BD%D0%B0%D0%B4%D0%B0%D0%BD%D0%BD%D1%8F-%D0%BF%D0%BE%D1%81%D0%BB%D1%83%D0%B3-%D1%82%D0%B0-%D0%BF%D0%BE%D0%B2%D0%B5%D1%80%D0%BD%D0%B5%D0%BD%D0%BD%D1%8F-%D0%BA%D0%BE%D1%88%D1%82%D1%96%D0%B2.pdf" className="link">Умови надання послуг та повернення коштів</a><br />
+            <a href="https://vector-school.online/%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D1%96%D1%80-java.pdf" className="link">Договір Веб розробка</a>
+          </div>
         </div>
         <div className="map-container">
           <iframe 
@@ -53,6 +61,7 @@ const Contacts = () => {
         </div>
       </footer>
 
+      <RekvizytyModal isOpen={isModalOpen} onClose={closeModal} />
     </section>
   );
 }

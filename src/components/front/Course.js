@@ -1,9 +1,9 @@
 import React from 'react';
 import './Course.css';
-import courseImage from './img/course_img/java-bg.png'; 
-import javaImage from './img/course_img/java-img.png'; 
-import coursImage from './img/course_img/p-4.png'; 
-import webImage from './img/course_img/web.png'; 
+import courseImage from '../img/course_img/java-bg.png'; 
+import javaImage from '../img/course_img/java-img.png'; 
+import coursImage from '../img/course_img/p-4.png'; 
+import webImage from '../img/course_img/web.png'; 
 
 const Course = () => {
   return (
