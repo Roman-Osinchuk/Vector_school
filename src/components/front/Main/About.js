@@ -1,12 +1,12 @@
 import React, { useState } from 'react';  
 import './About.css';
-import certificationImg from '../img/about_img/diploma.svg';
-import mentorsImg from '../img/about_img/teachers-2.svg';
-import controlImg from '../img/about_img/appraisal-form.svg';
-import graduatesImg from '../img/about_img/student.svg';
-import vector from '../img/about_img/about-v.png'; 
-import comput from '../img/about_img/proposal-img.png'; 
-import audience from '../img/about_img/audience.png';
+import certificationImg from '../../img/about_img/diploma.svg';
+import mentorsImg from '../../img/about_img/teachers-2.svg';
+import controlImg from '../../img/about_img/appraisal-form.svg';
+import graduatesImg from '../../img/about_img/student.svg';
+import vector from '../../img/about_img/about-v.png'; 
+import comput from '../../img/about_img/proposal-img.png'; 
+import audience from '../../img/about_img/audience.png';
 import Choice from './Choice';
 
 const About = () => {

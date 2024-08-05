@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import './Contacts.css';
-import logo from '../img/header_img/logo.png';
-import { ReactComponent as FacebookIcon } from '../img/about_img/facebook-1.svg';
-import { ReactComponent as InstagramIcon } from '../img/about_img/instagram-2.svg';
-import { ReactComponent as YouTubeIcon } from '../img/about_img/youtube-1.svg';
-import locationIcon from '../img/contacts_img/placeholder.svg'; 
-import phoneIcon from '../img/contacts_img/phone-call.svg'; 
-import clockIcon from '../img/contacts_img/clock.svg'; 
-import emailIcon from '../img/contacts_img/email.svg'; 
+import logo from '../../img/header_img/logo.png';
+import { ReactComponent as FacebookIcon } from '../../img/about_img/facebook-1.svg';
+import { ReactComponent as InstagramIcon } from '../../img/about_img/instagram-2.svg';
+import { ReactComponent as YouTubeIcon } from '../../img/about_img/youtube-1.svg';
+import locationIcon from '../../img/contacts_img/placeholder.svg'; 
+import phoneIcon from '../../img/contacts_img/phone-call.svg'; 
+import clockIcon from '../../img/contacts_img/clock.svg'; 
+import emailIcon from '../../img/contacts_img/email.svg'; 
 import RekvizytyModal from './Rekvizit'; 
 
 const Contacts = () => {

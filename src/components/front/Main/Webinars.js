@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Webinars.css';
-import JavaImage from '../img/webinars_img/webinar-first.png';  
-import WebDevImage from '../img/webinars_img/webinar.png'; 
+import JavaImage from '../../img/webinars_img/webinar-first.png';  
+import WebDevImage from '../../img/webinars_img/webinar.png'; 
 import Modal from './Modal';
 import Zapis from './Zapis';
 

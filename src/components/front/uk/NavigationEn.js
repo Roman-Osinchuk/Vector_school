@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import './Navigation.css';
-import logo from '../img/header_img/logo.png';
-import phoneIcon from '../img/header_img/phone-call.svg';
-import extraIcon1 from '../img/header_img/mesenger-2.svg';
-import extraIcon2 from '../img/header_img/viber-1.svg';
-import Modal from './Modal';
+import '../Main/Navigation.css';
+import logo from '../../img/header_img/logo.png';
+import phoneIcon from '../../img/header_img/phone-call.svg';
+import extraIcon1 from '../../img/header_img/mesenger-2.svg';
+import extraIcon2 from '../../img/header_img/viber-1.svg';
+import ModalEn from '../uk/ModalEn'; 
+import { Link } from 'react-router-dom';
 
-const Navigation = () => {
+const NavigationEn = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalEnOpen, setIsModalEnOpen] = useState(false);
   const [showScrollTopButton, setShowScrollTopButton] = useState(false);
 
   const toggleMenu = () => {
@@ -18,8 +19,8 @@ const Navigation = () => {
     }
   };
 
-  const toggleModal = () => {
-    setIsModalOpen(!isModalOpen);
+  const toggleModalEn = () => {
+    setIsModalEnOpen(!isModalEnOpen);
   };
 
   const scrollToTop = () => {
@@ -53,11 +54,11 @@ const Navigation = () => {
         <img src={logo} alt="Logo" className="logo" />
       </div>
       <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
-        <li><a href="#about" onClick={toggleMenu}>ПРО НАС</a></li>
-        <li><a href="#course" onClick={toggleMenu}>КУРСИ</a></li>
-        <li><a href="#proces" onClick={toggleMenu}>ПРОЦЕС НАВЧАННЯ</a></li>
-        <li><a href="#webinar" onClick={toggleMenu}>ВЕБІНАРИ</a></li>
-        <li><a href="#contacts" onClick={toggleMenu}>КОНТАКТИ</a></li>
+        <li><Link to="/en/about" onClick={toggleMenu}>ABOUT US</Link></li>
+        <li><Link to="/en/course" onClick={toggleMenu}>COURSES</Link></li>
+        <li><Link to="/en/proces" onClick={toggleMenu}>LEARNING PROCESS</Link></li>
+        <li><Link to="/en/webinars" onClick={toggleMenu}>WEBINARS</Link></li>
+        <li><Link to="/en/contacts" onClick={toggleMenu}>CONTACTS</Link></li>
       </ul>
       <a href="tel:+380673825500" className="phone-number-link">
         <div className="contact-number">
@@ -68,7 +69,7 @@ const Navigation = () => {
         </div>
       </a>
       <div className="extra-info">
-        <p onClick={toggleModal}>НАПИСАТИ</p>
+        <p onClick={toggleModalEn}>WRITE TO US</p>
       </div>
       <div className={`burger-menu ${isMenuOpen ? 'open' : ''} ${isScrolled ? '' : 'disabled'}`} onClick={toggleMenu}>
         <div className="bar1"></div>
@@ -88,9 +89,10 @@ const Navigation = () => {
         </div>
       </div>
       <div className="language-switch">
-        <p><b>UA</b> UK</p>
+        <Link to="/" className="language-link">EN</Link> | 
+        <Link to="/en/about" className="language-link">UA</Link>
       </div>
-      <Modal isOpen={isModalOpen} onClose={toggleModal} />
+      <ModalEn isOpen={isModalEnOpen} onClose={toggleModalEn} />
       {showScrollTopButton && (
         <button className="scroll-top-button" onClick={scrollToTop}>↑</button>
       )}
@@ -98,4 +100,4 @@ const Navigation = () => {
   );
 }
 
-export default Navigation;
+export default NavigationEn;
