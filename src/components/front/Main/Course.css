@@ -171,7 +171,14 @@ margin-top: -40px;
     .course-footer p {
       margin-bottom: 10px;
     }
-  
+    .course-info ul li::before {
+      content: '■'; 
+      color: rgba(33, 100, 174, 1); 
+      font-size: 1.2em;
+      position: absolute;
+      left: 10px;
+      top: -4px;
+    }
     .course-button {
       padding: 15px 25px;
       font-size: 0.9em;

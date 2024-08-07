@@ -146,115 +146,58 @@
   
   
   
-  @media (max-width: 768px) {
-    .steps {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 100px;
-      width: 250px;
-      margin-left: auto;
-      margin-right: 30%;
-    }
-    
-    .step {
-      border-radius: 10px;
-      width: 70px;
-      text-align: center;
-      position: relative;
-    }
-    
-    .step img {
-      margin-left: 40px;
-      width: 70px;
-      height: 60px;
-      border-radius: 50%;
-      box-shadow: 0 0 0 5px white;
-    }
-    
-    .bubble-background {
-      background-image: radial-gradient(circle, rgba(189, 189, 189, 0.911) 1px, transparent 1px);
-      background-size: 10px 10px; 
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-      border-radius: 50%;
-      width: 100px;
-      height: 90px;
-    }
-    
-    .step-number {
-      background-color: #A1CF45;
-      color: #1E6DAB;
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.2em;
-      position: absolute;
-      top: -30px;
-      left: 130%;
-      transform: translateX(-50%);
-    }
-    
-    .step h3 {
-      margin: 15px 0;
-      font-size: 1.2em;
-      width: 150px;
-    }
-    
-    .step p {
-      font-size: 1em;
-      width: 160px;
-    }
-    .sectionReviewWrapper {
-      width: 100%;
-      background-color:  #f5f8fd;
-      padding: 20px 0;
-      color: #000000;
-    }
-  
-    .sectionReview {
-      max-width: 90%;
-      margin: 0 auto;
-      text-align: center;
-      padding: 20px;
-      box-sizing: border-box;
-    }
-  
-    .slick-slide {
-      display: flex;
-      justify-content: center;
-    }
-  
-    .review {
-      max-width: 90%; /* Повний екран */
-      padding: 15px;
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-   
-    }
-  
-    .review img {
-      width: 40px;
-      height: 40px;
-    }
-  
-    .review h3 {
-      font-size: 1.2em;
-    }
-  
-    .review p {
-      font-size: 1em;
-    }
+@media (max-width: 768px) {
+  .sectionProces h2 {
+    padding-right: 20px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-size: 1.5em;
+  }
+  .step img {
+    display: none;
   }
   
+  .steps {
+    flex-direction: column;
+    gap: 20px;
+  }
 
-  
-  
+  .step {
+    width: 35%;
+    padding: 20px;
+  }
+
+  .bubble-background {
+    display: none;
+  }
+
+  .step-number {
+    width: 30px;
+    height: 30px;
+    font-size: 1em;
+    top: -20px;
+    margin-left: 5%;
+  }
+
+  .sectionReview h1 {
+    font-size: 1.5em;
+  }
+
+  .review {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .review img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .review h3 {
+    font-size: 1.2em;
+  }
+
+  .review p {
+    font-size: 1em;
+  }
+}
