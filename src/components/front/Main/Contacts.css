@@ -29,9 +29,6 @@ body {
     width: 30px; 
     height: 30px;
     margin-right: 10px; 
-    vertical-align: middle; 
-    border: 3px solid  #bfff31;
-    border-radius: 50px;
 }
 .links-container {
     margin-top: 10px;

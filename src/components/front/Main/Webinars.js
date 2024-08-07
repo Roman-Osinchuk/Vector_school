@@ -19,7 +19,7 @@ const Webinars = () => {
 
   return (
     <section id="webinar" className="sectionWebinars">
-      <h1>НАШІ ВЕБІНАРИ</h1>
+      <h2>НАШІ ВЕБІНАРИ</h2>
       <div className="webinar-container">
         <div className="webinar-card">
           <div className="webinar-date">2-2-2024</div>

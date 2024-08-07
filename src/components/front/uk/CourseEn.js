@@ -13,31 +13,31 @@ const Course = () => {
           <div className="course-title">
             <img src={courseImage} alt="Course" />
             <div>
-              <h2>JAVA PROGRAMMING FUNDAMENTALS FOR STUDENTS</h2>
+              <h2>BASICS OF JAVA PROGRAMMING FOR SCHOOL STUDENTS</h2>
+              <p>Start Date: <span className="start-date">16-02-2024</span></p>
             </div>
           </div>
           <img src={javaImage} alt="Java" className="java-image" />
         </div>
         <div className="course-content">
           <div className="course-info">
-            <p>Start Date: <span className="start-date">16-2-2024</span></p>
-            <h3>After the course, students will be able to</h3>
+            <h3>After completing the course, students will be able to:</h3>
             <ul>
-              <li>Set up a computer system (install drivers for Java programming);</li>
+              <li>Set up a computer system unit (installing drivers for Java programming);</li>
               <li>Solve problems using Java;</li>
-              <li>Utilize Java syntax;</li>
+              <li>Use Java syntax;</li>
               <li>Develop games and projects using algorithms and programming;</li>
               <li>Create data structures with classes and methods;</li>
               <li>Install software for games and projects using a Java game engine;</li>
               <li>Develop and use various Web components (HTML, CSS);</li>
               <li>Understand basic internet protocols (HTTP);</li>
-              <li>Optimize their programs for browser use;</li>
-              <li>Debug client-side and server-side interactions in projects.</li>
+              <li>Optimize their programs for browser performance;</li>
+              <li>Debug client-server project operations.</li>
             </ul>
           </div>
           <div className="course-description">
             <h3>About the Course</h3>
-            <p>Most children do not yet realize the importance of learning and acquiring knowledge. However, with mobile devices, they understand future job opportunities. Our goal is to develop children’s skills through practical examples, allowing them to create real gaming projects that they will enjoy programming. Primarily, this involves game development, working with graphics, and various projects that students haven't encountered before. The course aims to avoid just loading a computer in a classroom.</p>
+            <p>Most children are not yet aware of the importance of learning and gaining knowledge. However, with mobile devices, they understand the future of work. The main goal is to develop children’s skills in the Internet sphere. Therefore, we try to build our course on practical examples by creating real game projects that they will enjoy programming themselves. Mainly, these are game developments, working with graphics, and various other projects. Don’t miss out on this opportunity to engage with technology in a classroom setting!</p>
           </div>
         </div>
         <div className="course-footer">
@@ -49,27 +49,27 @@ const Course = () => {
       <div className="course-container">
         <div className="course-header">
           <div className="course-title">
-            <img src={webImage} alt="Web Development" />
+            <img src={webImage} alt="Course" />
             <div>
-              <h2>WEB DEVELOPMENT FOR STUDENTS</h2>
+              <h2>WEB DEVELOPMENT FOR SCHOOL STUDENTS</h2>
+              <p>Start Date: <span className="start-date">9-02-2024</span></p>
             </div>
           </div>
-          <img src={coursImage} alt="Web Development" className="java-image" />
+          <img src={coursImage} alt="Java" className="java-image" />
         </div>
         <div className="course-content">
           <div className="course-info">
-            <p>Start Date: <span className="start-date">9-2-2024</span></p>
-            <h3>After the course, students will be able to</h3>
+            <h3>After completing the course, students will be able to:</h3>
             <ul>
-              <li>HTML, CSS, text styling, vector graphics, CSS animations, Bootstrap, JavaScript, JQuery, AJAX, JQuery UI.</li>
-              <li>MySQL, PHP, Web-forms, control structures, client-server architecture, Session, Regular Expressions, mini-messenger, hosting.</li>
+              <li>HTML, CSS, text styling, vector graphics, CSS animation effects, Bootstrap, JavaScript, JQuery, AJAX, JQuery UI.</li>
+              <li>MySQL, PHP, Web forms, control structures, "client-server", Session, Regular Expression, mini-messenger, hosting.</li>
               <li>Laravel framework, routing, migrations, blade templates, MVC, CRUD, pagination, Laravel Collective Form, authentication, GitHub.</li>
-              <li>ASP.NET MVC 5, C#, Entity Framework, AJAX forms, e-commerce site, shopping cart, CodeFirst, filters, widgets, validation, Bitbucket.</li>
+              <li>ASP.NET MVC 5, C#, Entity Framework, AJAX forms, online store, shopping cart, CodeFirst, filters, widgets, validation, Bitbucket.</li>
             </ul>
           </div>
           <div className="course-description">
             <h3>About the Course</h3>
-            <p>Web development is not just a profession that requires extensive learning, practice, effort, and patience; it is also about enjoying the results, being inspired by something greater, continuous growth, self-improvement, and an aesthetic view of things. Many web developers find great satisfaction in their work as it involves creating masterpieces that bring both benefit and profit. Allow your child to discover their potential in web programming and secure a bright future. Enroll in the master class and try creating your first website!</p>
+            <p>Web development is not just a profession that requires extensive learning, practice, effort, and patience, but also enjoyment from the results, inspiration for something greater, continuous development, self-improvement, an aesthetic view of things, and the combination of something unreal. Many web developers find great satisfaction in their work because it's not just about writing code but creating a masterpiece that brings benefit and profit. Allow your child to discover their web programming skills and ensure a great future for themselves. Sign up for the master class and try creating your first website!</p>
           </div>
         </div>
         <div className="course-footer">

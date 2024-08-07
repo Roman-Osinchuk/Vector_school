@@ -23,24 +23,25 @@ header {
 }
 
 .online-education h2 {
-  font-size: 3em;
-  margin-bottom: 5%;
+  margin-top: 10%;
+  font-size: 2em;
+  margin-bottom: 2%;
 }
 
 .education-text {
   font-size: 1.5em;
   line-height: 1.5;
-  margin-bottom: 7%;
-  bottom: 25%;
+  margin-bottom: 4%;
+
 }
 
 .learn-more-btn {
   bottom: 20%;
-  padding: 15px 30px;
+  padding: 20px 40px;
   background-color: #bfff31;
   color: black;
   border: none;
-  border-radius: 20px;
+  border-radius: 50px;
   font-size: 1.2em;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -57,7 +58,7 @@ header {
   right: 0;
   text-align: center;
   color: white;
-  font-size: 1.2em;
+  font-size: 1.5em;
   z-index: 1; 
   padding: 10px; 
 }

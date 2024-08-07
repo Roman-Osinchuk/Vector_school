@@ -89,7 +89,7 @@ const NavigationEn = () => {
         </div>
       </div>
       <div className="language-switch">
-        <Link to="/" className="language-link">EN</Link> | 
+        <Link to="/" className="language-link "><div className='k'>EN</div></Link> | 
         <Link to="/en/about" className="language-link">UA</Link>
       </div>
       <ModalEn isOpen={isModalEnOpen} onClose={toggleModalEn} />

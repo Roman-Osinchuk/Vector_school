@@ -59,17 +59,8 @@ const Navigation = ({ language, onLanguageChange }) => {
         <li><a href="#webinar" onClick={toggleMenu}>{language === 'UA' ? 'ВЕБІНАРИ' : 'WEBINARS'}</a></li>
         <li><a href="#contacts" onClick={toggleMenu}>{language === 'UA' ? 'КОНТАКТИ' : 'CONTACTS'}</a></li>
       </ul>
-      <a href="tel:+380673825500" className="phone-number-link">
-        <div className="contact-number">
-          <div className="phone-icon-container">
-            <img src={phoneIcon} alt="Phone Icon" className="phone-icon" />
-            <p>+380673825500</p>
-          </div>
-        </div>
-      </a>
-      <div className="extra-info">
-        <p onClick={toggleModal}>{language === 'UA' ? 'НАПИСАТИ' : 'WRITE'}</p>
-      </div>
+      
+      
       <div className={`burger-menu ${isMenuOpen ? 'open' : ''} ${isScrolled ? '' : 'disabled'}`} onClick={toggleMenu}>
         <div className="bar1"></div>
         <div className="bar2"></div>
@@ -89,8 +80,19 @@ const Navigation = ({ language, onLanguageChange }) => {
       </div>
       <div className="language-switch">
         <p onClick={onLanguageChange}>
-          {language === 'UA' ? 'EN' : 'UA'} <b>{language}</b>
+          {language === 'EN' ? 'UA' : 'EN'} <b>{language}</b>
         </p>
+      </div>
+      <a href="tel:+380673825500" className="phone-number-link">
+        <div className="contact-number">
+          <div className="phone-icon-container">
+            <img src={phoneIcon} alt="Phone Icon" className="phone-icon" />
+            <p>+380673825500</p>
+          </div>
+        </div>
+      </a>
+      <div className="extra-info">
+        <p onClick={toggleModal}>{language === 'UA' ? 'НАПИСАТИ' : 'WRITE'}</p>
       </div>
       <Modal isOpen={isModalOpen} onClose={toggleModal} />
       {showScrollTopButton && (

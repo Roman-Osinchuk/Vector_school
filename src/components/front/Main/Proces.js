@@ -49,7 +49,7 @@ const Proces = () => {
 
   return (
     <section id="proces" className="sectionProces">
-      <h1>ЯК ПРОХОДИТЬ ПРОЦЕС НАВЧАННЯ?</h1>
+      <h2>ЯК ПРОХОДИТЬ ПРОЦЕС НАВЧАННЯ?</h2>
       <div className="steps">
         {steps.map(step => (
           <div key={step.number} className="step">

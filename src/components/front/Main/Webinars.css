@@ -11,10 +11,11 @@ body {
     text-align: center;
 }
 
-.sectionWebinars h1 {
-    margin-top: 80px;
-    font-size: 2.5em;
-    margin-bottom: 20px;
+.sectionWebinars h2 {
+    padding-top: 50px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-size: 2em;
 }
 
 .webinar-container {
@@ -50,8 +51,8 @@ body {
 }
 
 .webinar-card h2 {
-    margin-top:-60px;
-    color: #fff;
+    margin-top:-120px;
+    color: #ffffff;
     margin-left: 20px;
     font-size: 1.5em;
     margin-bottom:40px;
@@ -66,15 +67,15 @@ body {
 }
 
 .webinar-card ul li {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     position: relative;
-    padding-left: 20px; /* відступ для маркерів */
+    padding-left: 30px; /* відступ для маркерів */
 }
 
 .webinar-card ul li::before {
     content: '';
     position: absolute;
-    left: 5px;
+    left: 15px;
     top: 50%;
     transform: translateY(-50%);
     width: 10px;
@@ -83,15 +84,16 @@ body {
 }
 
 .sign-up-button {
+    margin-left:35% ;
+    display: inline-block;
+    padding: 20px 30px;
     background-color: #bfff31;
     color: #000000;
-    margin-left: 34%;
-    margin-bottom: 20px;
-    padding: 10px 20px;
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    font-size: 1em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .sign-up-button:hover {
@@ -139,7 +141,7 @@ body {
     margin: 20px auto;
     padding: 20px;
     max-width: 90%; /* Змінено для адаптації до розміру зображення */
-    text-align: center;
+    text-align: left;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -162,14 +164,14 @@ body {
 }
 
 .previous-button {
+    display: inline-block;
+    padding: 20px 30px;
     background-color: #bfff31;
     color: #000000;
-    padding: 10px 20px;
     border: none;
-    border-radius: 50px; /* Змінено для відповідності формі кнопки на зображенні */
+    border-radius: 50px;
     cursor: pointer;
-    font-size: 1em;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Додано тінь для кнопки */
+    text-transform: uppercase;
 }
 @media (max-width: 768px) {
     .webinar-card {

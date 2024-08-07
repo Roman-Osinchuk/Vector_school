@@ -14,13 +14,13 @@ const Course = () => {
             <img src={courseImage} alt="Course" />
             <div>
               <h2>ОСНОВИ ПРОГРАМУВАННЯ<br /> МОВОЮ JAVA ДЛЯ ШКОЛЯРІВ</h2>
+              <p>Дата старту <span className="start-date">16-02-2024</span></p>
             </div>
           </div>
           <img src={javaImage} alt="Java" className="java-image" />
         </div>
         <div className="course-content">
           <div className="course-info">
-          <p>Дата старту <span className="start-date">16-2-2024</span></p>
             <h3>Після навчання діти будуть вміти</h3>
             <ul>
               <li>налагодити системний блок комп’ютера (встановлення драйверів для роботи з мовою програмування Java);</li>
@@ -52,13 +52,14 @@ const Course = () => {
             <img src={webImage} alt="Course" />
             <div>
               <h2>WEB-РОЗРОБКА ДЛЯ ШКОЛЯРІВ</h2>
+              <p>Дата старту <span className="start-date">9-02-2024</span></p>
             </div>
           </div>
           <img src={coursImage} alt="Java" className="java-image" />
         </div>
         <div className="course-content">
           <div className="course-info">
-          <p>Дата старту <span className="start-date">9-2-2024</span></p>
+        
             <h3>Після навчання діти будуть вміти</h3>
             <ul>
               <li>HTML, CSS, стилізація текстів, векторна графіка, анімаційні ефекти в CSS, Bootstrap, JavaScript, JQuery, AJAX, JQuery UI.</li>

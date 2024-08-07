@@ -96,14 +96,13 @@ const About = () => {
         </div>
       </div>
 
-      <div className='tit'><h2>ДЛЯ КОГО?</h2></div> 
       <div className="target-audience">
         <div className="target-content">
           <div className="target-left">
             <img src={audience} alt="Для кого" />
           </div>
           <div className="target-right">
-            <h2>ДЛЯ ДІТЕЙ ВІКОМ ВІД 12 ДО 18 РОКІВ</h2>
+          <div className="context"><h2>ДЛЯ ДІТЕЙ ВІКОМ ВІД 12 ДО 18 РОКІВ</h2></div>
             <p>Програми курсів по Java та WEB-розробці розроблені таким чином, що в одній групі можуть навчатись діти різного віку.</p>
           </div>
         </div>

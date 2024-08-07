@@ -8,10 +8,13 @@
     text-align: center;
     background-color: rgba(33,100,174);
     color: white;
+    
   }
   
-  .sectionProces h1 {
-    margin-top: 50px;
+  .sectionProces h2 {
+    padding-top: 100px;
+    padding-right: 300px;
+    margin-top: 100px;
     margin-bottom: 80px;
     font-size: 2em;
   }
@@ -72,12 +75,13 @@
   }
   
   .step h3 {
-    margin: 15px 0;
+    margin: 5px 0;
     font-size: 1.2em;
   }
   
   .step p {
     font-size: 1em;
+    margin-bottom:50px ;
   }
   .sectionReviewWrapper {
     width: 100%;
@@ -94,8 +98,8 @@
     box-sizing: border-box;
   }
   .sectionReview h1{
-    font-size: 3em;
-    margin-right: 60%;
+    margin-bottom: 40px;
+    font-size: 2em;
   }
   .review {
     

@@ -1,10 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './Header.css';
-import logo from '../../img/header_img/logo.png';
-import phoneIcon from '../../img/header_img/phone-call.svg';
-import extraIcon1 from '../../img/header_img/mesenger-2.svg';
-import extraIcon2 from '../../img/header_img/viber-1.svg';
-import Modal from './Modal'; 
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -44,7 +39,7 @@ const Header = () => {
       </div>
 
       <div className="education-footer">
-        <p>ОСВІТА РАЗОМ ІЗ НАВЧАЛЬНИМ ПРОСТОРОМ VECTOR — ЦЕ ПРАВИЛЬНИЙ ВИБІР ТА ВІДМІННИЙ РЕЗУЛЬТАТ!</p>
+        <p>Освіта разом із навчальним простором VECTOR — це правильний вибір та відмінний результат!</p>
       </div>
     </header>
   );
