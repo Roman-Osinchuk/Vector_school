@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Vector_school/static/css/main.d8a7b242.css",
+    "main.css": "/Vector_school/static/css/main.6d16d04b.css",
     "main.js": "/Vector_school/static/js/main.3c632be4.js",
     "static/media/index-intro-3.jpg": "/Vector_school/static/media/index-intro-3.9103c34858a9a474a702.jpg",
     "static/media/webinar.png": "/Vector_school/static/media/webinar.3285128a41357b52091a.png",
@@ -35,11 +35,11 @@
     "static/media/youtube-1.svg": "/Vector_school/static/media/youtube-1.4b22338520c04fcd7f23b0ae151c7b91.svg",
     "static/media/mesenger-2.svg": "/Vector_school/static/media/mesenger-2.3506d76098ce8768127451fa26002354.svg",
     "static/media/facebook-1.svg": "/Vector_school/static/media/facebook-1.dc1f56fcb1fc0353f8cfe8d544b18540.svg",
-    "main.d8a7b242.css.map": "/Vector_school/static/css/main.d8a7b242.css.map",
+    "main.6d16d04b.css.map": "/Vector_school/static/css/main.6d16d04b.css.map",
     "main.3c632be4.js.map": "/Vector_school/static/js/main.3c632be4.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8a7b242.css",
+    "static/css/main.6d16d04b.css",
     "static/js/main.3c632be4.js"
   ]
 }
