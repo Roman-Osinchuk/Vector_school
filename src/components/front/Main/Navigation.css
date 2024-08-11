@@ -248,7 +248,8 @@ margin-left: 1%;
 @media only screen and (max-width: 768px) {
   .nav {
     padding: 10px; /* Зменшити padding до 10px з обох сторін */
-    width: 100%; /* Встановити ширину в 100% */
+    width: 100%; 
+    max-width: 45vh;
   }
   
 
@@ -307,6 +308,7 @@ margin-left: 1%;
     align-items: center;
     width: 20px;
     height: 30px;
+    margin-right: 5%;
     cursor: pointer;
   }
 
