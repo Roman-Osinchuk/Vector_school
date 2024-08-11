@@ -247,26 +247,25 @@ margin-left: 1%;
 
 @media only screen and (max-width: 768px) {
   .nav {
-    padding: 10px; /* Зменшити padding до 10px з обох сторін */
+    padding: 10px; 
     width: 100%; 
-    max-width: 45vh;
-  }
   
-
+  }
+ 
     .nav-links {
-      padding: 0; /* Уникайте додаткового padding */
-      box-sizing: border-box; /* Переконайтесь, що padding враховується */
+      padding: 0;
+      box-sizing: border-box; 
     }
   
   
   
 
   .logo {
-    height: 20px; /* Зменшити розмір логотипу */
+    height: 20px; 
   }
 
   .nav-links {
-    font-size: 0.9em; /* Зменшити розмір шрифта */
+    font-size: 0.9em; 
     margin: 0;
     padding: 0;
     flex: 1;
@@ -275,30 +274,30 @@ margin-left: 1%;
   }
 
   .nav-links li {
-    margin: 0 2px; /* Зменшити відступи між пунктами меню */
+    margin: 0 2px; 
   }
 
   .nav-links li a {
-    padding: 4px 8px; /* Зменшити внутрішні відступи */
+    padding: 4px 8px; 
   }
 
   .contact-number {
-    font-size: 0.9em; /* Зменшити розмір шрифта */
+    font-size: 0.9em; 
   }
 
   .phone-icon {
-    height: 12px; /* Зменшити розмір іконки телефону */
-    margin-right: 10px; /* Зменшити відступи */
+    height: 12px; 
+    margin-right: 10px; 
   }
 
   .extra-info {
-    padding: 5px 10px; /* Зменшити відступи */
-    font-size: 0.6em; /* Зменшити розмір шрифта */
+    padding: 5px 10px;
+    font-size: 0.9em; 
   }
 
 
   .language-switch {
-    font-size: 0.6em; /* Зменшити розмір шрифта */
+    font-size: 0.9em; 
   }
 
   .burger-menu {
@@ -308,7 +307,7 @@ margin-left: 1%;
     align-items: center;
     width: 20px;
     height: 30px;
-    margin-right: 5%;
+    margin-right: 2%;
     cursor: pointer;
   }
 
@@ -327,7 +326,7 @@ margin-left: 1%;
   .nav-links {
     display: none;
     position: absolute;
-    top: 50px;
+    top: 60px;
     left: 0;
     width: 100%;
     color: black;
@@ -336,14 +335,14 @@ margin-left: 1%;
     padding: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 999;
-    box-sizing: border-box; /* Урахування padding у ширині */
+    box-sizing: border-box; 
   }
 
   .nav-links.open {
     display: flex;
   }
 
-  /* Приховати горизонтальне переповнення */
+  
   body {
     overflow-x: hidden;
   }
