@@ -14,7 +14,7 @@ import CourseEn from './components/front/uk/CourseEn';
 import ProcesEn from './components/front/uk/ProcesEn';
 import WebinarsEn from './components/front/uk/WebinarsEn';
 import ContactsEn from './components/front/uk/ContactsEn';
-import NavigationEn from './components/front/uk/NavigationEn';
+
 
 function App() {
   const [language, setLanguage] = useState('UA'); 
@@ -24,6 +24,7 @@ function App() {
 
   return (
     <div className="App">
+     
       <Navigation language={language} onLanguageChange={handleLanguageChange} />
       {language === 'UA' ? (
         <>

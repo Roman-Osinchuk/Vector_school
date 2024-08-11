@@ -147,43 +147,57 @@
   
   
   @media (max-width: 768px) {
+   
+    
+    .sectionProces h2 {
+      padding-top: 100px;
+      
+      margin-top: 100px;
+      margin-bottom: 80px;
+      font-size: 1.5em;
+      width: 300px;
+      margin-left: 40px;
+    }
+    
     .steps {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 100px;
-      width: 250px;
+      gap: 30px;
+      width: 100%;
       margin-left: auto;
-      margin-right: 30%;
+      margin-right: auto;
     }
     
     .step {
+  
       border-radius: 10px;
-      width: 70px;
+      padding: 20px;
+      width: 300px;
       text-align: center;
       position: relative;
     }
     
     .step img {
-      margin-left: 40px;
-      width: 70px;
-      height: 60px;
+      width: 200px;
+      height: 200px;
       border-radius: 50%;
+      border: 5px solid rgba(33,100,174, 1);
       box-shadow: 0 0 0 5px white;
     }
     
     .bubble-background {
-      background-image: radial-gradient(circle, rgba(189, 189, 189, 0.911) 1px, transparent 1px);
+     
+      background-image: radial-gradient(circle, rgba(228, 224, 224, 0.911) 1px, transparent 1px);
       background-size: 10px 10px; 
       display: flex;
       justify-content: center;
       align-items: center;
       padding: 20px;
       border-radius: 50%;
-      width: 100px;
-      height: 90px;
+      width: 240px; /* Задайте ширину контейнера */
+      height: 260px; /* Задайте висоту контейнера */
     }
-    
     .step-number {
       background-color: #A1CF45;
       color: #1E6DAB;
@@ -196,19 +210,18 @@
       font-size: 1.2em;
       position: absolute;
       top: -30px;
-      left: 130%;
+      left: 45%;
       transform: translateX(-50%);
     }
     
     .step h3 {
-      margin: 15px 0;
+      margin: 5px 0;
       font-size: 1.2em;
-      width: 150px;
     }
     
     .step p {
       font-size: 1em;
-      width: 160px;
+      margin-bottom:50px ;
     }
     .sectionReviewWrapper {
       width: 100%;

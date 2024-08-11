@@ -48,57 +48,58 @@ const Navigation = ({ language, onLanguageChange }) => {
   }, []);
 
   return (
-    <nav className={`nav ${isMenuOpen ? 'open' : ''} ${isScrolled ? 'scrolled' : ''}`}>
-      <div className="logo-container">
-        <img src={logo} alt="Logo" className="logo" />
-      </div>
-      <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
-        <li><a href="#about" onClick={toggleMenu}>{language === 'UA' ? 'ПРО НАС' : 'ABOUT US'}</a></li>
-        <li><a href="#course" onClick={toggleMenu}>{language === 'UA' ? 'КУРСИ' : 'COURSES'}</a></li>
-        <li><a href="#proces" onClick={toggleMenu}>{language === 'UA' ? 'ПРОЦЕС НАВЧАННЯ' : 'LEARNING PROCESS'}</a></li>
-        <li><a href="#webinar" onClick={toggleMenu}>{language === 'UA' ? 'ВЕБІНАРИ' : 'WEBINARS'}</a></li>
-        <li><a href="#contacts" onClick={toggleMenu}>{language === 'UA' ? 'КОНТАКТИ' : 'CONTACTS'}</a></li>
-      </ul>
-      
-      
-      <div className={`burger-menu ${isMenuOpen ? 'open' : ''} ${isScrolled ? '' : 'disabled'}`} onClick={toggleMenu}>
-        <div className="bar1"></div>
-        <div className="bar2"></div>
-        <div className="bar3"></div>
-      </div>
-      <div className='extr-socia'>
-        <div className="container">
-          <a href="http://m.me/vector.km.ua" target="_blank" rel="noopener noreferrer">
-            <img src={extraIcon1} alt="Extra Icon 1" className="extra-icon" />
-          </a>
+    
+      <nav className={`nav ${isMenuOpen ? 'open' : ''} ${isScrolled ? 'scrolled' : ''}`}>
+        <div className="logo-container">
+          <img src={logo} alt="Logo" className="logo" />
         </div>
-        <div className="container">
-          <a href="viber://chat?number=+380672938092" target="_blank" rel="noopener noreferrer">
-            <img src={extraIcon2} alt="Extra Icon 2" className="extra-icon" />
-          </a>
-        </div>
-      </div>
-      <div className="language-switch">
-        <p onClick={onLanguageChange}>
-          {language === 'EN' ? 'UA' : 'EN'} <b>{language}</b>
-        </p>
-      </div>
-      <a href="tel:+380673825500" className="phone-number-link">
-        <div className="contact-number">
-          <div className="phone-icon-container">
-            <img src={phoneIcon} alt="Phone Icon" className="phone-icon" />
-            <p>+380673825500</p>
+        <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
+          <li><a href="#about" onClick={toggleMenu}>{language === 'UA' ? 'ПРО НАС' : 'ABOUT US'}</a></li>
+          <li><a href="#course" onClick={toggleMenu}>{language === 'UA' ? 'КУРСИ' : 'COURSES'}</a></li>
+          <li><a href="#proces" onClick={toggleMenu}>{language === 'UA' ? 'ПРОЦЕС НАВЧАННЯ' : 'LEARNING PROCESS'}</a></li>
+          <li><a href="#webinar" onClick={toggleMenu}>{language === 'UA' ? 'ВЕБІНАРИ' : 'WEBINARS'}</a></li>
+          <li><a href="#contacts" onClick={toggleMenu}>{language === 'UA' ? 'КОНТАКТИ' : 'CONTACTS'}</a></li>
+        </ul>
+
+        <div className='extr-socia'>
+          <div className="container">
+            <a href="http://m.me/vector.km.ua" target="_blank" rel="noopener noreferrer">
+              <img src={extraIcon1} alt="Extra Icon 1" className="extra-icon" />
+            </a>
+          </div>
+          <div className="container">
+            <a href="viber://chat?number=+380672938092" target="_blank" rel="noopener noreferrer">
+              <img src={extraIcon2} alt="Extra Icon 2" className="extra-icon" />
+            </a>
           </div>
         </div>
-      </a>
-      <div className="extra-info">
-        <p onClick={toggleModal}>{language === 'UA' ? 'НАПИСАТИ' : 'WRITE'}</p>
-      </div>
-      <Modal isOpen={isModalOpen} onClose={toggleModal} />
-      {showScrollTopButton && (
-        <button className="scroll-top-button" onClick={scrollToTop}>↑</button>
-      )}
-    </nav>
+        <div className="language-switch">
+          <p onClick={onLanguageChange}>
+            {language === 'EN' ? 'UA' : 'EN'} <b>{language}</b>
+          </p>
+        </div>
+        <a href="tel:+380673825500" className="phone-number-link">
+          <div className="contact-number">
+            <div className="phone-icon-container">
+              <img src={phoneIcon} alt="Phone Icon" className="phone-icon" />
+              <p>+380673825500</p>
+            </div>
+          </div>
+        </a>
+        <div className="extra-info">
+          <p onClick={toggleModal}>{language === 'UA' ? 'НАПИСАТИ' : 'WRITE'}</p>
+        </div>
+        <div className={`burger-menu ${isMenuOpen ? 'open' : ''} ${isScrolled ? '' : 'disabled'}`} onClick={toggleMenu}>
+          <div className="bar1"></div>
+          <div className="bar2"></div>
+          <div className="bar3"></div>
+        </div>
+        <Modal isOpen={isModalOpen} onClose={toggleModal} />
+        {showScrollTopButton && (
+          <button className="scroll-top-button" onClick={scrollToTop}>↑</button>
+        )}
+      </nav>
+
   );
 }
 

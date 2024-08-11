@@ -4,12 +4,13 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  
+  width: 100%;
   position: relative;
   background-color: #f5f8fd;
   
   z-index: 4;
 }
+
 .section-content1 h2{
   margin-top: 100px;
   font-size: 3em;
@@ -200,6 +201,8 @@ border-radius: 8px;
 .bottom-center img {
   height: 200%;
   width: 150%;
+  max-height: 210%;
+  max-width: 160%;
  margin-top: -15%;
  margin-right: 50%;
 }
@@ -314,10 +317,13 @@ margin-left: 30px;
   margin-top: 120px;
   margin-right: 50%;
 }
+
+
+
+
 @media (max-width: 768px) {
   .sectionAbout {
     flex-direction: column;
-    
     height: auto; 
   }
 
@@ -325,18 +331,19 @@ margin-left: 30px;
     font-size: 2em; 
     margin-bottom: 5px; 
     width: 200px;
-   
+    padding: 0px 20px 0px  20px;
   }
 
   .section-content1 p {
     font-size: 1em; 
-    width: 300px;
+    width: 350px;
+    padding: 0px 20px 0px  20px;
   }
 
   .additional-info1 {
     flex: 1 1 10%;
     max-width: 100%;
-    padding: 10px;
+    padding:15px;
     margin: 5px;
   }
 
@@ -386,7 +393,7 @@ margin-left: 30px;
   .vector-text {
     position: absolute;
     font-size: 6em;
-    color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.08);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -421,13 +428,13 @@ margin-left: 30px;
   .bottom-right {
     width: 20%;
     text-align: center;
-    padding-right: 200px;
+    padding-right: 400px;
     font-weight: bold;
   }
   .bottom-section h2{
     color: white;
     font-size: 1.2em;
-    padding-left: 30px;
+    padding-left: 55px;
   }
   .bottom-right p{
     color: white;
@@ -438,6 +445,8 @@ margin-left: 30px;
     flex-direction: column;
     margin-top: 30px;
     padding: 10px;
+    padding: 0px 20px 0px  20px;
+    
   }
 
   .video-left {
@@ -493,9 +502,10 @@ margin-left: 30px;
   }
 .target-left img{
   width: 250px;
-  margin-right: 0%;
+  margin-right: -30%;
 }
   .tit {
+    
     margin-left: 30px;
     text-align: center;
     margin-bottom: 20px;

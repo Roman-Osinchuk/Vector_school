@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.body{
+  width: 100%;
+  color: #bfff31;
+}
 .nav {
   display: flex;
   justify-content: space-between;
@@ -13,7 +17,7 @@
   color: white;
   left: 0;
   width: 100%;
-  padding: 10px 20px;
+  padding: 10px 50px;
   box-sizing: border-box;
   transition: background-color 0.3s ease;
   z-index: 9999;
@@ -23,6 +27,7 @@
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   color: black;
+  width: 100%;
 }
 
 .scrolled .nav-links li a {
@@ -241,29 +246,58 @@ margin-left: 1%;
 }
 
 @media only screen and (max-width: 768px) {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
   .nav {
-    height: 70px;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    color: white;
-    z-index: 9999;
+    padding: 10px; /* Зменшити padding до 10px з обох сторін */
+    width: 100%; /* Встановити ширину в 100% */
   }
+  
+
+    .nav-links {
+      padding: 0; /* Уникайте додаткового padding */
+      box-sizing: border-box; /* Переконайтесь, що padding враховується */
+    }
+  
+  
+  
 
   .logo {
-    height: 20px;
+    height: 20px; /* Зменшити розмір логотипу */
+  }
+
+  .nav-links {
+    font-size: 0.9em; /* Зменшити розмір шрифта */
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-links li {
+    margin: 0 2px; /* Зменшити відступи між пунктами меню */
+  }
+
+  .nav-links li a {
+    padding: 4px 8px; /* Зменшити внутрішні відступи */
+  }
+
+  .contact-number {
+    font-size: 0.9em; /* Зменшити розмір шрифта */
+  }
+
+  .phone-icon {
+    height: 12px; /* Зменшити розмір іконки телефону */
+    margin-right: 10px; /* Зменшити відступи */
   }
 
   .extra-info {
-    padding: 10px 10px;
-    margin-left: 10%;
+    padding: 5px 10px; /* Зменшити відступи */
+    font-size: 0.6em; /* Зменшити розмір шрифта */
+  }
+
+
+  .language-switch {
+    font-size: 0.6em; /* Зменшити розмір шрифта */
   }
 
   .burger-menu {
@@ -271,11 +305,9 @@ margin-left: 1%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 30px;
     cursor: pointer;
-    margin-left: 5%;
-    margin-right: 5%;
   }
 
   .burger-menu .bar1,
@@ -287,22 +319,13 @@ margin-left: 1%;
     margin: 4px 0;
     transition: all 0.3s ease;
   }
-
-  .contact-number {
-    display: flex;
-    align-items: center;
-    margin-left: 30px;
-  }
-
-  .phone-icon-container::before,
-  .phone-icon-container::after {
-    left: 25%;
-  }
-
+.extr-socia{
+  display: none;
+}
   .nav-links {
     display: none;
     position: absolute;
-    top: 70px;
+    top: 50px;
     left: 0;
     width: 100%;
     color: black;
@@ -311,21 +334,17 @@ margin-left: 1%;
     padding: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 999;
+    box-sizing: border-box; /* Урахування padding у ширині */
   }
 
   .nav-links.open {
     display: flex;
   }
 
-  .extr-socia {
-    display: none;
-  }
-
-  .language-switch {
-    display: none;
-  }
-
-  .phone-number-link p {
-    display: none;
+  /* Приховати горизонтальне переповнення */
+  body {
+    overflow-x: hidden;
   }
 }
+
+

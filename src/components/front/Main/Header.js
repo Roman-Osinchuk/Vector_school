@@ -1,18 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import './Header.css';
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 5) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -27,7 +19,6 @@ const Header = () => {
 
   return (
     <header className="header">
-      
       <div className="online-education">
         <h2>ОНЛАЙН ОСВІТА</h2>
         <p className="education-text">
