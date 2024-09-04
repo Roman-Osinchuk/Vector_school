@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Vector_school/static/css/main.6d16d04b.css",
-    "main.js": "/Vector_school/static/js/main.3c632be4.js",
+    "main.css": "/Vector_school/static/css/main.0ead4496.css",
+    "main.js": "/Vector_school/static/js/main.945fe730.js",
+    "static/media/java-bg.png": "/Vector_school/static/media/java-bg.fdabd4e11f1235e4e8e0.png",
     "static/media/index-intro-3.jpg": "/Vector_school/static/media/index-intro-3.9103c34858a9a474a702.jpg",
     "static/media/webinar.png": "/Vector_school/static/media/webinar.3285128a41357b52091a.png",
     "static/media/p-6.png": "/Vector_school/static/media/p-6.0d635f029bae67bfd0c0.png",
     "static/media/audience.png": "/Vector_school/static/media/audience.405c6669236739013c53.png",
     "static/media/about-v.png": "/Vector_school/static/media/about-v.797308e1bd523132733f.png",
     "static/media/p-5.png": "/Vector_school/static/media/p-5.8f9aebd5f711f18a4f4d.png",
-    "static/media/java-bg.png": "/Vector_school/static/media/java-bg.fdabd4e11f1235e4e8e0.png",
     "static/media/p-4.png": "/Vector_school/static/media/p-4.9902b515fff210eec295.png",
     "static/media/p-3.png": "/Vector_school/static/media/p-3.af34cde9d5a488848d53.png",
     "static/media/p-1.png": "/Vector_school/static/media/p-1.79b19aa4112585c3f93d.png",
@@ -17,9 +17,18 @@
     "static/media/question-bg.png": "/Vector_school/static/media/question-bg.2a2400a44546afaa933f.png",
     "static/media/proposal-img.png": "/Vector_school/static/media/proposal-img.864bce0f84f16c69973e.png",
     "static/media/webinar-first.png": "/Vector_school/static/media/webinar-first.f1b5435d8f0f905f608f.png",
+    "static/media/discount-icon.png": "/Vector_school/static/media/discount-icon.72d9add8d61239a52492.png",
+    "static/media/businessman.svg": "/Vector_school/static/media/businessman.5d5f5d334c0e76a74cfde05cf8c8c996.svg",
+    "static/media/gamedev.svg": "/Vector_school/static/media/gamedev.464a59cb0f1823abd09ec788e228a3ff.svg",
+    "static/media/web-development.svg": "/Vector_school/static/media/web-development.01f59cabcb29d44135c2160e864f6cd2.svg",
+    "static/media/web-design.svg": "/Vector_school/static/media/web-design.4e1f7195bd89c1a7491f264a4c782e0c.svg",
+    "static/media/baby-boy.svg": "/Vector_school/static/media/baby-boy.f410419baa28e58549027194689ce9f9.svg",
     "static/media/teachers-2.svg": "/Vector_school/static/media/teachers-2.5420c0f18615ddc7e4cec7147d06522b.svg",
+    "static/media/rocket.svg": "/Vector_school/static/media/rocket.9570499cf788edceb538c0963ad2463b.svg",
     "static/media/student.svg": "/Vector_school/static/media/student.0a933ddaf4428b0882b82f84680fbb4e.svg",
+    "static/media/boy.svg": "/Vector_school/static/media/boy.9d3e60af9e6849247853fd3c9d93844c.svg",
     "static/media/instagram-2.svg": "/Vector_school/static/media/instagram-2.7864392f8bf46cfad3d009a87f2b0354.svg",
+    "static/media/teleworking.svg": "/Vector_school/static/media/teleworking.442803f5b2962688ffa621f355f70c63.svg",
     "static/media/appraisal-form.svg": "/Vector_school/static/media/appraisal-form.83a5f2156b6e76568f7d49eeb3cb5331.svg",
     "static/media/diploma.svg": "/Vector_school/static/media/diploma.cd209178b27977aaf9c9d1771d0a89e9.svg",
     "static/media/slick.svg": "/Vector_school/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -31,15 +40,17 @@
     "static/media/phone-call.svg": "/Vector_school/static/media/phone-call.b317c6ce1d7f6b097689ddffe1ebcec0.svg",
     "static/media/clock.svg": "/Vector_school/static/media/clock.396d5a540cf515ec5b343991bf7dd4f6.svg",
     "index.html": "/Vector_school/index.html",
+    "static/media/equal.svg": "/Vector_school/static/media/equal.c5ef5fe9ac10adeeb9d40eb8c4537ab6.svg",
     "static/media/placeholder.svg": "/Vector_school/static/media/placeholder.f8e6a747acf9c5ab46ac236e526807ab.svg",
     "static/media/youtube-1.svg": "/Vector_school/static/media/youtube-1.4b22338520c04fcd7f23b0ae151c7b91.svg",
+    "static/media/circle.svg": "/Vector_school/static/media/circle.336e972bf41cf71ada98e21a05952664.svg",
     "static/media/mesenger-2.svg": "/Vector_school/static/media/mesenger-2.3506d76098ce8768127451fa26002354.svg",
     "static/media/facebook-1.svg": "/Vector_school/static/media/facebook-1.dc1f56fcb1fc0353f8cfe8d544b18540.svg",
-    "main.6d16d04b.css.map": "/Vector_school/static/css/main.6d16d04b.css.map",
-    "main.3c632be4.js.map": "/Vector_school/static/js/main.3c632be4.js.map"
+    "main.0ead4496.css.map": "/Vector_school/static/css/main.0ead4496.css.map",
+    "main.945fe730.js.map": "/Vector_school/static/js/main.945fe730.js.map"
   },
   "entrypoints": [
-    "static/css/main.6d16d04b.css",
-    "static/js/main.3c632be4.js"
+    "static/css/main.0ead4496.css",
+    "static/js/main.945fe730.js"
   ]
 }
