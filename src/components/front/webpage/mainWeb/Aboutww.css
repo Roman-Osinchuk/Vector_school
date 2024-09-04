@@ -1,0 +1,417 @@
+.sectionAbout1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #f5f8fd;
+
+}
+
+.section-content1 {
+  display: flex;
+  margin-top: 100px;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px; /* Adjust as needed */
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.section-content1 .context1 {
+  flex: 1;
+}
+
+.section-content1 p {
+  margin-top: 20px; /* Adjust as needed */
+}
+.section-content1 h2{
+  margin-top: 100px; /* Adjust as needed */
+}
+.photo1 {
+  flex: 1;
+  text-align: center;
+}
+
+.photo1 img {
+  margin-top: 20%;
+  margin-right: 10%;
+  max-width: 600px;
+  height: auto;
+}
+
+.additional-info1 {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: transparent 
+}
+
+.info-container1 {
+  flex: 1 1 23%;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  background-color: transparent 
+}
+
+.info-container1 img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+  background-color: transparent; /* This should be redundant, as the image should not have a background */
+  padding: 10px;
+}
+
+
+.info-container1 h2 {
+  margin-bottom: 10px;
+}
+.text-container1 p{
+  max-width: 600px;
+}
+
+
+
+.bottom-section1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30vh;
+  background-color: rgba(33,100,174);
+  overflow: hidden; /* Ensures that overflow content is hidden */
+}
+
+.vector-text1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12rem;
+  font-weight: bold;
+  color: rgba(50,110,180);
+  text-align: center;
+  z-index: 1;
+}
+
+.text1 {
+  color: #bfff31;
+}
+
+.bottom-content1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.bottom-left1 {
+  font-weight: bold;
+  font-size: 1.5em;
+  width: 52%;
+  color: white;
+  padding-left: 150px;
+  padding-right: 50px;
+}
+
+.bottom-center1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150%;
+  height: 150%;
+  overflow: hidden; /* Ensures that any overflow content is hidden */
+  position: relative;
+}
+
+.bottom-center1 img {
+  margin-right: 30%;
+  max-width: 100%; /* Ensures that the image width does not exceed its container */
+  max-height: 100%; /* Ensures that the image height does not exceed its container */
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+
+
+.bottom-right1 {
+  width: 25%;
+  text-align: center;
+  padding-right: 550px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.bottom-section1 h2 {
+  font-size: 3em;
+}
+
+.bottom-right1 p {
+  color: white;
+  width: 300px;
+  text-align: center;
+  margin-left: 30px;
+}
+
+.video-section1 {
+  display: flex;
+  margin-top: 100px;
+  padding: 20px;
+  z-index: 3;
+  max-width: 1200px;
+}
+
+.video-left1 {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.video-right1 {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.video-right1 h2 {
+  margin-top: 15%;
+  margin-bottom: 10px;
+}
+
+
+
+.video-right1 ul {
+  list-style-type: none; 
+  padding-left: 0;
+  margin-bottom: 5px;
+}
+
+.video-right1 ul li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.video-right1 ul li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: rgba(33,100,174); 
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sign-up-button1 {
+  bottom: 20%;
+  padding: 20px 40px;
+  background-color: #bfff31;
+  color: black;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.web-dev-for-school {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 50px;
+  margin-right: 25%;
+}
+
+.text-content {
+  margin-left: 0px;
+  margin-bottom: 0px; 
+  font-size: 1.5em;
+}
+
+.text-wrapper {
+  display: flex;
+  align-items: flex-start;
+  position: relative; /* Позиціонування для абсолютного розміщення смуги */
+}
+
+.left-bar {
+  margin-top: 15px;
+  width: 10px;
+  background-color: #bfff31;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0; /* Закріплюємо зліва */
+}
+
+.text-wrapper p {
+margin-top: 10px;
+  margin-left: 20px; /* Відступ, щоб текст не перекривався з полосою */
+  font-size: 18px;
+  line-height: 1.5;
+  color: #000000;
+  max-width: 600px;
+}
+
+
+@media (max-width: 1500px) {
+  .bottom-center1 {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-content1 {
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+  }
+
+  .section-content1 h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px; 
+    max-width: 500px; 
+    padding: 0px 20px;
+    margin-right: 20px;
+  }
+
+  .section-content1 p {
+    font-size: 1em;
+    width: auto; 
+    padding: 0px 50px;
+    width: 400px;
+  
+    align-items: left; 
+    text-align: left; 
+  }
+
+  .additional-info1 {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    flex: 1 1 auto;
+    max-width: 100%;
+    padding: 15px;
+    margin: 5px;
+  }
+
+  .info-container1 {
+    flex: 1 1 auto;
+    padding: 10px;
+    margin: 5px;
+    text-align: center; 
+  }
+
+  .info-container1 img {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+  }
+
+  .photo1 {
+    display: none;
+  }
+
+  .bottom-section1 {
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #024e7a;
+    color: white;
+  }
+
+  .vector-text1 {
+    position: absolute;
+    font-size: 6em;
+    color: rgba(255, 255, 255, 0.08);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    white-space: nowrap;
+  }
+
+  .bottom-content1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    z-index: 2;
+  }
+
+  .bottom-left1 {
+    font-weight: bold;
+    font-size: 0.9em;
+    width: 50%;
+    color: white;
+    padding-left: 15px;
+    padding-right: 5px;
+  }
+
+  .bottom-center1 img {
+    display: none;
+  }
+.video-section1{
+  margin-top: 20px;
+}
+  .bottom-right1 {
+    width: 20%;
+    text-align: center;
+    padding-right: 400px;
+    font-weight: bold;
+  }
+
+  .bottom-section1 h2 {
+    color: white;
+    font-size: 1.2em;
+    padding-left: 55px;
+  }
+
+  .bottom-right1 p {
+    color: white;
+    width: 200px;
+  }
+  .video-left1 img{
+   display: none;
+  }
+  .video-right1{
+    margin-right: 50px;
+  }
+  .text-content {
+    padding: 20px; /* Додаємо відступи для мобільних пристроїв */
+  }
+
+  .text-wrapper {
+    padding: 10px; /* Додаємо відступи навколо тексту */
+  }
+
+  .text-content p {
+    width: 90%; /* Робимо текст трохи ширшим на мобільних пристроях */
+    font-size: 0.9rem; /* Зменшуємо розмір шрифту для кращої читабельності */
+    margin: 0 auto; /* Центруємо текст */
+  }
+
+  .left-bar {
+    width: 5%; /* Зменшуємо ширину лівої панелі для мобільних пристроїв */
+    margin: 10px auto; /* Центруємо ліву панель */
+  }
+ 
+}
