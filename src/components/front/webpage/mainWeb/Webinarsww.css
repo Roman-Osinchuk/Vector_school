@@ -43,59 +43,53 @@
 
 .modules-container {
   display: flex;
-  justify-content: space-around; /* Додає рівномірний простір між елементами */
+  justify-content: center; /* Центрує всі модулі по горизонталі */
   align-items: flex-start;
-  flex-wrap: wrap; /* Дозволяє адаптацію при зміні ширини */
-  gap: 10px;
-  margin-top: 30px;
-  max-width: 1000px;
-  margin-left: 17%;
+  flex-wrap: wrap; /* Дозволяє модулям адаптуватися до зміни ширини */
+  gap: 20px; /* Збільшує відступи між модулями */
+  max-width: 100%; /* Забезпечує використання всієї доступної ширини */
+  margin: 0 auto; /* Центрує контейнер на сторінці */
+  padding: 20px;
 }
 
 .module {
-
   border-radius: 10px;
-  
   text-align: center;
   padding: 20px;
-  max-width: 230px; /* Фіксована ширина для однакових модулів */
-  min-width: 230px;
+  max-width: 270px; /* Фіксована ширина для однакових модулів */
+  min-width: 270px;
   position: relative;
 }
 
 .module-header {
-  text-align: center;
-  margin-bottom: 10px; 
-   margin-left: 40px;
+  margin-bottom: 20px; 
 }
 
 .module-title {
   display: block;
-  font-size: 16px; /* Можна налаштувати відповідно до потреб */
+  font-size: 16px;
   font-weight: bold;
-  z-index: 9;
-  margin: 0; /* Видалено відступ зверху */
+  margin: 0;
 }
 
 .module-number {
   display: block;
-  font-size: 14px; /* Можна налаштувати відповідно до потреб */
-  margin-top: 5px; /* Зменшено відступ між заголовком та номером модуля */
+  font-size: 14px;
+  margin-top: 5px;
 }
 
 .module-icon {
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
   border-radius: 50%;
   padding: 15px;
-  margin: 0 auto; /* Центрування іконки */
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px; /* Зменшена ширина і висота для круглої іконки */
+  width: 100px;
   height: 100px;
-  margin-left: 65px;
-  position: relative; /* Відносне позиціювання для можливого подальшого коригування */
+  z-index: 4;
+  margin: 0 auto 15px auto; /* Центрування іконки та відступ знизу */
 }
 
 .module-icon img {
@@ -104,30 +98,31 @@
 }
 
 .module-details {
-  text-align: center; /* Центрує текст в модулі */
+  z-index: 2;
+  text-align: center;
   background-color: white;
   padding: 20px;
   margin-top: -20px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+ 
   border-radius: 20px;
-  max-width: 230px; /* Фіксована ширина для однакових модулів */
-  min-width: 230px;
 }
 
 .module p {
   margin: 5px 0;
-  font-size: 0.9em; /* Зменшений розмір шрифту */
+  font-size: 0.9em;
+  margin-bottom:20px;
 }
-.bol{
+
+.bol {
   font-weight: bold;
-  margin-bottom: 40px;
+  margin-bottom: 20px; /* Зменшено відступ знизу для рівномірності */
 }
 
 .module .price {
   color: #007bff;
   font-weight: bold;
   margin-top: 10px;
-  font-size: 1.2em; /* Збільшений розмір шрифту для ціни */
+  font-size: 1.2em;
 }
 
 
