@@ -3,6 +3,7 @@ import './App.css';
 import Navigation from './components/front/PageStructure/Main/Navigation';
 import NavigationWEB from './components/front/webpage/mainWeb/Navigationww';
 import WebPage from './components/front/webpage/web';
+import JavaPage from './components/front/javapage/java'; 
 import PageStructure from './components/front/PageStructure/PageStructure';
 
 function App() {
@@ -13,8 +14,14 @@ function App() {
     setLanguage(language === 'UA' ? 'EN' : 'UA');
   };
 
-  const handlePageChange = () => {
-    setCurrentPage('details'); 
+  const handleWebPageClick = () => {
+    console.log('Web Page Clicked');
+    setCurrentPage('webpage'); 
+  };
+  
+  const handleJavaPageClick = () => {
+    console.log('Java Page Clicked');
+    setCurrentPage('javapage'); 
   };
 
   const handleLogoClick = () => {
@@ -25,13 +32,18 @@ function App() {
     <div className="App">
       {currentPage === 'main' ? (
         <Navigation language={language} onLanguageChange={handleLanguageChange} onLogoClick={handleLogoClick} />
+      ) : currentPage === 'webpage' ? (
+        <NavigationWEB language={language} onLanguageChange={handleLanguageChange} onLogoClick={handleLogoClick} />
       ) : (
         <NavigationWEB language={language} onLanguageChange={handleLanguageChange} onLogoClick={handleLogoClick} />
       )}
+
       {currentPage === 'main' ? (
-        <PageStructure language={language} onButtonClick={handlePageChange} /> 
-      ) : (
+        <PageStructure language={language} onWebPageClick={handleWebPageClick} onJavaPageClick={handleJavaPageClick} /> 
+      ) : currentPage === 'webpage' ? (
         <WebPage language={language} />
+      ) : (
+        <JavaPage language={language} />
       )}
     </div>
   );

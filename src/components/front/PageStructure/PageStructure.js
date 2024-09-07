@@ -13,14 +13,14 @@ import ProcesEn from './uk/ProcesEn';
 import WebinarsEn from './uk/WebinarsEn';
 import ContactsEn from './uk/ContactsEn';
 
-const PageStructure = ({ language, onButtonClick }) => {
+const PageStructure = ({ language, onWebPageClick, onJavaPageClick }) => {
   return (
     <>
       {language === 'UA' ? (
         <>
           <Header />
           <About />
-          <Course onButtonClick={onButtonClick} /> {/* Передати функцію */}
+          <Course onWebPageClick={onWebPageClick} onJavaPageClick={onJavaPageClick} />
           <Proces />
           <Webinars />
           <Contacts />
@@ -29,7 +29,7 @@ const PageStructure = ({ language, onButtonClick }) => {
         <>
           <HeaderEn />
           <AboutEn />
-          <CourseEn onButtonClick={onButtonClick} /> {/* Передати функцію */}
+          <CourseEn onWebPageClick={onWebPageClick} onJavaPageClick={onJavaPageClick} />
           <ProcesEn />
           <WebinarsEn />
           <ContactsEn />

@@ -143,9 +143,9 @@ body {
       font-size: 0.9em;
     }
   .java-image{
-  width: 50px;
-margin-left: 230px;
-margin-top: -40px;
+      width: 50px;
+    margin-left: 230px;
+    margin-top: -60px;
   }
     .course-info, .course-description {
       width: 100%;

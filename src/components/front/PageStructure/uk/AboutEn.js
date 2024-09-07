@@ -7,7 +7,7 @@ import graduatesImg from '../../../img/about_img/student.svg';
 import vector from '../../../img/about_img/about-v.png'; 
 import comput from '../../../img/about_img/proposal-img.png'; 
 import audience from '../../../img/about_img/audience.png';
-import Choice from './ChoiceEn';
+import Choice from '../../PageStructure/uk/ChoiceEn';
 
 const About = () => {
   const [showChoice, setShowChoice] = useState(false);

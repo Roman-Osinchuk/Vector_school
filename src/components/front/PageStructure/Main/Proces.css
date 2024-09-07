@@ -151,12 +151,11 @@
     
     .sectionProces h2 {
       padding-top: 100px;
-      
       margin-top: 100px;
       margin-bottom: 80px;
-      font-size: 1.5em;
-      width: 300px;
-      margin-left: 40px;
+      font-size: 1em;
+      width: 600px;
+      margin-left: 50px;
     }
     
     .steps {

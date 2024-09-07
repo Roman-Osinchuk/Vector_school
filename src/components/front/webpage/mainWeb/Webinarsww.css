@@ -5,16 +5,20 @@
 }
 
 .course-structure h2 {
-  margin-top: 50px;
-  font-size: 36px;
-  margin-bottom: 10px;
-  text-align: center; /* Вирівняно по центру */
+  margin-top: 100px;
+  margin-left: 10%;
+  text-align: left;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #000000;
 }
 
 .course-structure h3 {
-  font-size: 24px;
-  margin-bottom: 70px;
-  text-align: center; /* Вирівняно по центру */
+  margin-left: 10%;
+  text-align: left;
+  font-size: 1.5rem;
+  margin-bottom: 100px;
+  color: #000000;
 }
 
 .course-structure p {
@@ -41,6 +45,315 @@
   transform: rotate(180deg);
 }
 
+.modules-container {
+  display: flex;
+  justify-content: center; /* Центрує всі модулі по горизонталі */
+  align-items: flex-start;
+  flex-wrap: wrap; /* Дозволяє модулям адаптуватися до зміни ширини */
+  gap: 20px; /* Збільшує відступи між модулями */
+  max-width: 100%; /* Забезпечує використання всієї доступної ширини */
+  margin: 0 auto; /* Центрує контейнер на сторінці */
+  padding: 20px;
+}
+
+.module {
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  max-width: 270px; /* Фіксована ширина для однакових модулів */
+  min-width: 270px;
+  position: relative;
+}
+
+.module-header {
+  margin-bottom: 20px; 
+}
+
+.module-title {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.module-number {
+  display: block;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.module-icon {
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  z-index: 4;
+  margin: 0 auto 15px auto; 
+}
+
+.module-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.module-details {
+  z-index: 2;
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  margin-top: -20px;
+ 
+  border-radius: 20px;
+}
+
+.module p {
+  margin: 5px 0;
+  font-size: 0.9em;
+  margin-bottom:20px;
+}
+
+.bol {
+  font-weight: bold;
+  margin-bottom: 20px; 
+}
+
+.module .price {
+  color: #2d67b2;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+
+
+.summary {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.summary-item {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right:20px; 
+
+}
+
+.equals-icon {
+  font-size: 20px; 
+  line-height: 1;
+}
+
+.dot-icon {
+  background-color: #bfff31;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.schedule {
+  margin-top: 50px;
+  text-align: center; 
+}
+
+.schedule h3 {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.schedule p {
+  margin-left: 27%;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.module-card {
+  background-color: rgb(255, 255, 255);
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 300px;
+  text-align: center; 
+  margin: 20px 0; 
+  margin-left: 20%;
+}
+
+
+.module-date {
+  background-color: #2d67b2;
+  color: white;
+  padding: 10px 0;
+  width: 100%;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.module-schedule {
+  padding: 20px;
+  display: flex; /* Вмикаємо Flexbox */
+  flex-direction: column; /* Розміщуємо елементи вертикально */
+  justify-content: flex-start; /* Вирівнювання по вертикалі */
+  align-items: flex-start; /* Вирівнювання по горизонталі */
+}
+
+.module-schedule h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #000;
+}
+
+.module-schedule p {
+  margin: 5px 0;
+  font-size: 1em;
+  color: #000;
+}
+
+.pay-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #bfff31;
+  color: black;
+  border: none;
+  border-radius: 50px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+margin-left:15% ;
+}
+
+.pay-button:hover {
+  background-color: #a6e12d;
+}
+
+.discounts {
+  margin-top: 20px;
+  text-align: center; /* Вирівняння по центру */
+}
+
+.discounts h3 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.discounts p {
+  text-align: center;
+  font-size: 16px;
+  color: #000000;
+}
+
+.discounts-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 880px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.discount-item {
+  background-color: #9ed2f7;
+  border-radius: 50%;
+  padding: 20px;
+  width: 200px; /* Фіксована ширина для зменшення розміру */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.discount-percentage {
+  font-size: 32px; /* Зменшено розмір */
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.discount-item p {
+  font-size: 14px; 
+  color: #000;
+  margin: 0;
+  font-weight: bold;
+
+}
+
+.discount-item img {
+  position: absolute;
+  top: -30px;
+  left: 90%;
+  transform: translateX(-50%);
+  width: 40%;
+  height: auto;
+}
+
+.next-quesh {
+  margin-top: 40px;
+  background-image: url('../../../img/webinars_img/question-bg.png');
+  width: 100%;
+  height: 20vh;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.next-quesh p {
+  font-size: 1.5em;
+  margin-top: 20px;
+  margin-left: 80px;
+  color: #000;
+  text-align: center;
+}
+
+.previous-buttn {
+  background-color: #ffffff;
+  color: #000;
+  padding: 15px 30px;
+  border: none;
+  margin-right: 80px;
+  border-radius: 50px; /* Змінено для відповідності формі кнопки */
+  cursor: pointer;
+  font-size: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.previous-buttn:hover {
+  background-color: #f0f0f0; /* Додано для ефекту при наведенні */
+}
+
+
+@media (max-width: 768px) {
+ 
 .modules-container {
   display: flex;
   justify-content: center; /* Центрує всі модулі по горизонталі */
@@ -125,239 +438,6 @@
   font-size: 1.2em;
 }
 
-
-
-.summary {
-  display: flex;
-  justify-content: space-between; /* Додає простір між елементами */
-  align-items: center;
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 500px;
-  margin: 20px auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.summary-item {
-  display: flex;
-  align-items: center;
-}
-
-.icon {
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-  margin-right:20px; 
-
-}
-
-.equals-icon {
-  font-size: 20px; /* Збільшує розмір символу "=" */
-  line-height: 1;
-}
-
-.dot-icon {
-  background-color: #bfff31; /* Задає зелений колір для точки */
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-}
-
-.schedule {
-  margin-top: 50px;
-  text-align: center; /* Вирівняння по центру */
-}
-
-.schedule h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.schedule p {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-
-.module-card {
-  background-color: rgb(255, 255, 255);
-  display: flex; /* Вмикаємо Flexbox */
-  flex-direction: column; /* Розміщуємо елементи вертикально */
-  justify-content: center; /* Вирівнювання по вертикалі */
-  align-items: center; /* Вирівнювання по горизонталі */
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  max-width: 300px;
-  text-align: center; /* Вирівнювання тексту по центру горизонтально */
-  margin: 20px 0; /* Відступи для окремих карток по вертикалі */
-  margin-left: 20%; /* Відступ зліва 20% */
-}
-
-
-.module-date {
-  background-color: #2d67b2;
-  color: white;
-  padding: 10px 0;
-  width: 100%;
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
-.module-schedule {
-  padding: 20px;
-  display: flex; /* Вмикаємо Flexbox */
-  flex-direction: column; /* Розміщуємо елементи вертикально */
-  justify-content: flex-start; /* Вирівнювання по вертикалі */
-  align-items: flex-start; /* Вирівнювання по горизонталі */
-}
-
-.module-schedule h3 {
-  margin-top: 0;
-  font-size: 1.2em;
-  font-weight: bold;
-  color: #000;
-}
-
-.module-schedule p {
-  margin: 5px 0;
-  font-size: 1em;
-  color: #000;
-}
-
-.pay-button {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #bfff31;
-  color: black;
-  border: none;
-  border-radius: 50px;
-  font-size: 1em;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.pay-button:hover {
-  background-color: #a6e12d;
-}
-
-.discounts {
-  margin-top: 50px;
-  text-align: center; /* Вирівняння по центру */
-}
-
-.discounts h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.discounts p {
-  font-size: 16px;
-  color: #000;
-  margin-bottom: 30px;
-  margin-bottom: 100px;
-}
-
-.discounts-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  max-width: 880px;
-  margin: 0 auto; /* Вирівнювання по центру */
-}
-
-.discount-item {
-  background-color: #9ed2f7;
-  border-radius: 50%;
-  padding: 20px;
-  width: 200px; /* Фіксована ширина для зменшення розміру */
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  aspect-ratio: 1/1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.discount-percentage {
-  font-size: 32px; /* Зменшено розмір */
-  margin-top: 10px;
-  margin-bottom: 5px;
-  font-weight: bold;
-  color: #007bff;
-}
-
-.discount-item p {
-  font-size: 14px; 
-  color: #000;
-  margin: 0;
-  font-weight: bold;
-
-}
-
-.discount-item img {
-  position: absolute;
-  top: -50px;
-  left: 80%;
-  transform: translateX(-50%);
-  width: 40%;
-  height: auto;
-}
-
-.next-quesh {
-  margin-top: 40px;
-  background-image: url('../../../img/webinars_img/question-bg.png');
-  width: 100%;
-  height: 20vh;
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.next-quesh p {
-  font-size: 1.5em;
-  margin-top: 20px;
-  margin-left: 80px;
-  color: #000;
-  text-align: center;
-}
-
-.previous-buttn {
-  background-color: #ffffff;
-  color: #000;
-  padding: 15px 30px;
-  border: none;
-  margin-right: 80px;
-  border-radius: 50px; /* Змінено для відповідності формі кнопки */
-  cursor: pointer;
-  font-size: 1em;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s;
-}
-
-.previous-buttn:hover {
-  background-color: #f0f0f0; /* Додано для ефекту при наведенні */
-}
-
-
-@media (max-width: 768px) {
-  .modules-container {
-    display: flex; /* Use flexbox for layout */
-    flex-wrap: wrap; /* Allow items to wrap */
-    justify-content: center; /* Center the modules horizontally */
-    gap: 10px; /* Add space between modules */
-    margin-right: 25%;
-  }
-  
-  /* Set each module to take up half the container width on larger screens */
-  .module {
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    margin-bottom: 15px; /* Space below each module */
-  }
 
   .summary{
     width: 90%;

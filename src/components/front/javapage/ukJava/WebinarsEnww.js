@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Webinarsww.css';
+import '../../webpage/mainWeb/Webinarsww.css';
 import FrontEndIcon from '../img/modul_img/baby-boy.svg';
 import BackEndIcon from '../img/modul_img/boy.svg';
 import LaravelIcon from '../img/modul_img/businessman.svg';
@@ -8,7 +8,8 @@ import DesignImage from '../img/modul_img/figure.png';
 import Discon from '../img/modul_img/discount-icon.png';
 import EqualsIcon from '../img/modul_img/equal.svg';
 import DotIcon from '../img/modul_img/circle.svg';
-import Modal from '../ukWeb/ModalEnwUA';
+import Modal from '../ukJava/ModalEnwUA';
+
 
 const Webinars = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -25,56 +26,56 @@ const Webinars = () => {
   const moduleData = [
     {
       id: 1,
-      title: "1 МОДУЛЬ",
-      name: "Front-end",
+      title: "MODULE 1",
+      name: "Basic",
       icon: FrontEndIcon,
-      details: ["12 занять", "(по 2 години)", "1,5 місяці", "Двічі на тиждень", "2700 грн."]
+      details: ["12 classes", "(2 hours each)", "1.5 months", "Twice a week", "2700 UAH"]
     },
     {
       id: 2,
-      title: "2 МОДУЛЬ",
-      name: "Back-end",
+      title: "MODULE 2",
+      name: "Hacker",
       icon: BackEndIcon,
-      details: ["12 занять", "(по 2 години)", "1,5 місяці", "Двічі на тиждень", "2700 грн."]
+      details: ["12 classes", "(2 hours each)", "1.5 months", "Twice a week", "2700 UAH"]
     },
     {
       id: 3,
-      title: "3 МОДУЛЬ",
-      name: "Laravel",
+      title: "MODULE 3",
+      name: "Young Entrepreneur",
       icon: LaravelIcon,
-      details: ["12 занять", "(по 2 години)", "1,5 місяці", "Двічі на тиждень", "2700 грн."]
+      details: ["12 classes", "(2 hours each)", "1.5 months", "Twice a week", "2700 UAH"]
     },
     {
       id: 4,
-      title: "4 МОДУЛЬ",
-      name: "ASP.NET MVC 5",
+      title: "MODULE 4",
+      name: "Game Dev",
       icon: AspNetIcon,
-      details: ["12 занять (+3 додаткових)", "(по 2 години)", "1,5 місяці", "Двічі на тиждень", "2700 грн."]
+      details: ["12 classes", "(2 hours each)", "1.5 months", "Twice a week", "2700 UAH"]
     }
   ];
 
   const discountData = [
-    { id: 1, percentage: "-10%", text: "ПРИ ОПЛАТІ ЗА КУРС" },
-    { id: 2, percentage: "-20%", text: "ПРИ ОПЛАТІ ЗА 2-Й КУРС" },
-    { id: 3, percentage: "-5%", text: "ПРИВЕДИ ДРУГА" }
+    { id: 1, percentage: "-10%", text: "WHEN PAYING FOR THE COURSE" },
+    { id: 2, percentage: "-20%", text: "WHEN PAYING FOR 2 COURSES" },
+    { id: 3, percentage: "-5%", text: "BRING A FRIEND" }
   ];
 
   return (
     <section id="course-structure" className="course-structure">
-      <h2>КУРС WEB-РОЗРОБКИ ДЛЯ ШКОЛЯРІВ</h2>
-      <h3>ДЛЯ ДІТЕЙ ВІКОМ 12-18 РОКІВ</h3>
-      <p>Кожен модуль – це окремий блок, який є фундаментом для наступних модулів. Результатом кожного є повноцінні програми.</p>
+      <h2>Java Online Course</h2>
+      <h3>for children aged 12-18</h3>
+      <p>Online classes for children from 12 years old</p>
 
       <div className="design-image-container">
         <img src={DesignImage} alt="Design Element" className="design-image" />
       </div>
 
-            <div className="modules-container">
+      <div className="modules-container">
         {moduleData.map((module, index) => (
           <div key={module.id} className="module">
             <div className="module-header">
               <span className="module-title">{module.name}</span>
-              <span className="module-number">{index + 1} модуль</span>
+              <span className="module-number">{index + 1} Module</span>
             </div>
             <div className="module-icon">
               <img src={module.icon} alt={module.name} />
@@ -90,52 +91,47 @@ const Webinars = () => {
         ))}
       </div>
 
-
-
-
-
       <div className="design-image-container flipped">
-  <img src={DesignImage} alt="Design Element" className="design-image" />
+        <img src={DesignImage} alt="Design Element" className="design-image" />
       </div>
-
 
       <div className="summary">
         <div className="summary-item">
-          <strong>1 КУРС</strong>
+          <strong>1 COURSE</strong>
         </div>
         <div className="summary-item">
           <img src={EqualsIcon} alt="=" className="icon equals-icon" />
-          <strong>4 МОДУЛЯ</strong>
+          <strong>4 MODULES</strong>
         </div>
         <div className="summary-item">
           <img src={DotIcon} alt="dot" className="icon dot-icon" />
-          <strong>48 ЗАНЯТЬ</strong>
+          <strong>48 CLASSES</strong>
         </div>
         <div className="summary-item">
           <img src={DotIcon} alt="dot" className="icon dot-icon" />
-          <strong>96 ГОДИН</strong>
+          <strong>96 HOURS</strong>
         </div>
       </div>
 
       <div className="schedule">
-        <h3>СТАРТ ПЕРШОГО МОДУЛЯ: FRONT-END</h3>
-        <p>ОБИРАЙТЕ ЗРУЧНИЙ ЧАС САМЕ ДЛЯ ВАС</p>
+        <h3>Start of the first module: Basic</h3>
+        <p>Choose a convenient time for you</p>
         <div className="module-card">
           <div className="module-date">
-            20.02.2024
+              19.02.2024
           </div>
           <div className="module-schedule">
-            <h3>Розклад</h3>
-            <p>Вівторок 16:30–18:30</p>
-            <p>Четвер 16:30–18:30</p>
-            <button className="pay-button" onClick={toggleModal2}>Оплатити</button>
+            <h3>Schedule</h3>
+            <p>Monday 16:30–18:30</p>
+            <p>Saturday 16:30–18:30</p>
+            <button className="pay-button" onClick={toggleModal2}>Pay</button>
           </div>
         </div>
       </div>
 
       <div className="discounts">
-        <h3>ЗНИЖКИ</h3>
-        <p>РІЗНІ ВИДИ ЗНИЖОК НЕ СУМУЮТЬСЯ. ПРАЦЮЄ ТА, ЯКА БІЛЬША</p>
+        <h3>DISCOUNTS</h3>
+        <p>DIFFERENT TYPES OF DISCOUNTS DO NOT COMBINE. ONLY THE LARGER ONE APPLIES</p>
         <div className="discounts-container">
           {discountData.map(discount => (
             <div key={discount.id} className="discount-item">
@@ -148,11 +144,11 @@ const Webinars = () => {
       </div>
 
       <div className="next-quesh">
-        <p>ЗАЛИШИЛИСЬ ПИТАННЯ?<br />НАПИШІТЬ НАМ ТА ОТРИМАЙТЕ КОНСУЛТАЦІЮ</p>
-        <button onClick={toggleModal} className="previous-buttn">Написати</button>
+        <p>HAVE QUESTIONS?<br />WRITE TO US AND GET A CONSULTATION</p>
+        <button onClick={toggleModal} className="previous-buttn">Write</button>
       </div>
-      <Modal isOpen={isModalOpen} onClose={toggleModal} text={"Виникло питання?"}/>
-      <Modal isOpen={isModal2Open} onClose={toggleModal2}text={"Замовити модуль"} />
+      <Modal isOpen={isModalOpen} onClose={toggleModal} text={"Have a question?"}/>
+      <Modal isOpen={isModal2Open} onClose={toggleModal2} text={"Order module"} />
     </section>
   );
 };

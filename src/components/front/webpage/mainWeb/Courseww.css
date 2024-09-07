@@ -19,37 +19,42 @@ body {
 
 .course-headerT h1 {
   margin-top: 100px;
-  text-align: center;
+  text-align: left;
   font-size: 2.5rem;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   color: #000000;
 }
 
 .tabsT {
   display: flex;
-  justify-content: center;
+  justify-content: space-around; /* Розподіл простору між вкладками */
+  align-items: center; /* Вирівнювання по вертикалі */
+  margin: 0 auto;
   margin-bottom: 20px;
-  padding:10px;
-  width: 53%;
-  margin-left: 25%;
+  padding: 10px;
+  width: 90%;
   background-color: #fff;
   border-radius: 50px;
+  
 }
 
 .tabT {
-  padding: 12px 25px;
-  margin: 0 10px;
-  border: 2px solid #bfff31;
-  background-color: transparent;
-  border-radius: 30px;
+  flex-grow: 1; 
+  text-align: center;
+  padding: 15px 30px;
+  margin: 0 10px; 
+  border-radius: 50px;
   cursor: pointer;
   font-size: 1rem;
   font-weight: bold;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #fff;
+  border: none;
 }
+
 
 .tabT.activeT {
   background-color: #bfff31;
+  border-color: #bfff31;
   color: #000000; /* Чорний текст на активній кнопці */
 }
 
@@ -71,9 +76,11 @@ body {
   width: 48%;
   padding: 20px;
   border-radius: 8px;
-  border: 3px solid #bfff31;
+  border-left: 5px solid #bfff31;
+  border-bottom: 5px solid #bfff31;
   background-color: #fff;
 }
+
 
 .programT h3, .learnT h3 {
   margin-bottom: 15px;

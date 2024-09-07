@@ -5,7 +5,7 @@ import javaImage from '../../../img/course_img/java-img.png';
 import coursImage from '../../../img/course_img/p-4.png'; 
 import webImage from '../../../img/course_img/web.png'; 
 
-const Course = ({ onButtonClick }) => {
+const Course = ({ onWebPageClick, onJavaPageClick }) => {
   return (
     <section id="course" className="sectionCourse">
       <div className="course-container">
@@ -42,7 +42,7 @@ const Course = ({ onButtonClick }) => {
         </div>
         <div className="course-footer">
           <p><strong>ПОСПІШАЙТЕ</strong><br />Старт нового курсу через <span className="days-left">0 днів</span></p>
-          <button className="course-button" onClick={onButtonClick}>Детальніше</button>
+          <button className="course-button" onClick={onJavaPageClick}>Детальніше</button>
         </div>
       </div>
 
@@ -74,7 +74,7 @@ const Course = ({ onButtonClick }) => {
         </div>
         <div className="course-footer">
           <p><strong>ПОСПІШАЙТЕ</strong><br />Старт нового курсу через <span className="days-left">0 днів</span></p>
-          <button className="course-button" onClick={onButtonClick}>Детальніше</button>
+          <button className="course-button" onClick={onWebPageClick}>Детальніше</button>
         </div>
       </div>
     </section>

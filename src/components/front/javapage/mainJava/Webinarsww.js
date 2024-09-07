@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Webinarsww.css';
+import '../../webpage/mainWeb/Webinarsww.css';
 import FrontEndIcon from '../img/modul_img/baby-boy.svg';
 import BackEndIcon from '../img/modul_img/boy.svg';
 import LaravelIcon from '../img/modul_img/businessman.svg';
@@ -8,7 +8,7 @@ import DesignImage from '../img/modul_img/figure.png';
 import Discon from '../img/modul_img/discount-icon.png';
 import EqualsIcon from '../img/modul_img/equal.svg';
 import DotIcon from '../img/modul_img/circle.svg';
-import Modal from '../ukWeb/ModalEnwUA';
+import Modal from '../ukJava/ModalEnwUA';
 
 const Webinars = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -26,30 +26,30 @@ const Webinars = () => {
     {
       id: 1,
       title: "1 МОДУЛЬ",
-      name: "Front-end",
+      name: "Базовий",
       icon: FrontEndIcon,
       details: ["12 занять", "(по 2 години)", "1,5 місяці", "Двічі на тиждень", "2700 грн."]
     },
     {
       id: 2,
       title: "2 МОДУЛЬ",
-      name: "Back-end",
+      name: "Хакерський",
       icon: BackEndIcon,
       details: ["12 занять", "(по 2 години)", "1,5 місяці", "Двічі на тиждень", "2700 грн."]
     },
     {
       id: 3,
       title: "3 МОДУЛЬ",
-      name: "Laravel",
+      name: "Юний бізнесмен",
       icon: LaravelIcon,
       details: ["12 занять", "(по 2 години)", "1,5 місяці", "Двічі на тиждень", "2700 грн."]
     },
     {
       id: 4,
       title: "4 МОДУЛЬ",
-      name: "ASP.NET MVC 5",
+      name: "Game dev",
       icon: AspNetIcon,
-      details: ["12 занять (+3 додаткових)", "(по 2 години)", "1,5 місяці", "Двічі на тиждень", "2700 грн."]
+      details: ["12 занять", "(по 2 години)", "1,5 місяці", "Двічі на тиждень", "2700 грн."]
     }
   ];
 
@@ -61,9 +61,9 @@ const Webinars = () => {
 
   return (
     <section id="course-structure" className="course-structure">
-      <h2>КУРС WEB-РОЗРОБКИ ДЛЯ ШКОЛЯРІВ</h2>
-      <h3>ДЛЯ ДІТЕЙ ВІКОМ 12-18 РОКІВ</h3>
-      <p>Кожен модуль – це окремий блок, який є фундаментом для наступних модулів. Результатом кожного є повноцінні програми.</p>
+      <h2>Курс Java Online</h2>
+      <h3>для дітей віком 12-18 років</h3>
+      <p>Онлайн заняття для дітей від 12 років</p>
 
       <div className="design-image-container">
         <img src={DesignImage} alt="Design Element" className="design-image" />
@@ -118,16 +118,16 @@ const Webinars = () => {
       </div>
 
       <div className="schedule">
-        <h3>СТАРТ ПЕРШОГО МОДУЛЯ: FRONT-END</h3>
-        <p>ОБИРАЙТЕ ЗРУЧНИЙ ЧАС САМЕ ДЛЯ ВАС</p>
+        <h3>Старт першого модуля: Базовий</h3>
+        <p>Обирайте зручний час саме для вас</p>
         <div className="module-card">
           <div className="module-date">
-            20.02.2024
+              19.02.2024
           </div>
           <div className="module-schedule">
             <h3>Розклад</h3>
-            <p>Вівторок 16:30–18:30</p>
-            <p>Четвер 16:30–18:30</p>
+            <p>Понеділок 16:30–18:30</p>
+            <p>Cубота 16:30–18:30</p>
             <button className="pay-button" onClick={toggleModal2}>Оплатити</button>
           </div>
         </div>

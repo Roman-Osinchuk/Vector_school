@@ -370,7 +370,10 @@ margin-top: 10px;
     display: none;
   }
 .video-section1{
-  margin-top: 20px;
+  margin-top: 5px;
+  text-align: left;
+  margin-right: 40px;
+  max-width: 500px;
 }
   .bottom-right1 {
     width: 20%;

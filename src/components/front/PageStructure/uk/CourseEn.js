@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../Main/Course.css';
 import courseImage from '../../../img/course_img/java-bg.png'; 
 import javaImage from '../../../img/course_img/java-img.png'; 
 import coursImage from '../../../img/course_img/p-4.png'; 
 import webImage from '../../../img/course_img/web.png'; 
 
-const Course = ({ onButtonClick }) => {
+const Course = ({ onWebPageClick, onJavaPageClick }) => {
   return (
     <section id="course" className="sectionCourse">
       <div className="course-container">
@@ -13,7 +13,7 @@ const Course = ({ onButtonClick }) => {
           <div className="course-title">
             <img src={courseImage} alt="Course" />
             <div>
-              <h2>BASICS OF JAVA PROGRAMMING FOR SCHOOL STUDENTS</h2>
+              <h2>BASICS OF JAVA PROGRAMMING <br/>FOR SCHOOL STUDENTS</h2>
               <p>Start Date: <span className="start-date">16-02-2024</span></p>
             </div>
           </div>
@@ -42,7 +42,7 @@ const Course = ({ onButtonClick }) => {
         </div>
         <div className="course-footer">
           <p><strong>HURRY UP</strong><br />New course starts in <span className="days-left">0 days</span></p>
-          <button className="course-button" onClick={onButtonClick}>Learn More</button>
+          <button className="course-button" onClick={onJavaPageClick}>Learn More</button>
         </div>
       </div>
 
@@ -51,7 +51,7 @@ const Course = ({ onButtonClick }) => {
           <div className="course-title">
             <img src={webImage} alt="Course" />
             <div>
-              <h2>WEB DEVELOPMENT FOR SCHOOL STUDENTS</h2>
+              <h2>WEB DEVELOPMENT <br/>FOR SCHOOL STUDENTS</h2>
               <p>Start Date: <span className="start-date">9-02-2024</span></p>
             </div>
           </div>
@@ -74,7 +74,7 @@ const Course = ({ onButtonClick }) => {
         </div>
         <div className="course-footer">
           <p><strong>HURRY UP</strong><br />New course starts in <span className="days-left">0 days</span></p>
-          <button className="course-button" onClick={onButtonClick}>Learn More</button>
+          <button className="course-button" onClick={onWebPageClick}>Learn More</button>
         </div>
       </div>
     </section>

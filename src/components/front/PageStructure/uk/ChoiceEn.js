@@ -1,38 +1,38 @@
 import React from 'react';
 import '../Main/Choice.css';
 
-const ChoiceEn = ({ isOpen, onClose }) => {
+const Choice = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="modal">
-      <div className="modal-content">
-        <span className="close" onClick={onClose}>&times;</span>
-        <form>
-          <label>
-            <h2>REGISTER FOR THE MASTER CLASS</h2>
-            <select>
-              <option value="java" placeholder="Field">Java</option>
-              <option value="web">Web Development</option>
-            </select>
-          </label>
-          <label>
-            <input type="text" name="fullname" placeholder="Full Name"/>
-          </label>
-          <label>
-            <input type="tel" name="phone" placeholder="Phone" />
-          </label>
-          <label>
-            <input type="text" name="childFullname" placeholder="Child's Full Name" />
-          </label>
-          <label>
-            <input type="number" name="childAge" placeholder="Child's Age (in years)" />
-          </label>
-          <button type="submit">Submit</button>
-        </form>
+    <div className="modal-overlay">
+  <div className="modal">
+    <span className="close" onClick={onClose}>&times;</span>
+    <form>
+      <h2>REGISTER FOR THE MASTER CLASS</h2>
+      <div className="form-group">
+        <select>
+          <option value="java">Java</option>
+          <option value="web">Web Development</option>
+        </select>
       </div>
-    </div>
+      <div className="form-group">
+        <input type="text" name="fullname" placeholder="Full Name" />
+      </div>
+      <div className="form-group">
+        <input type="tel" name="phone" placeholder="Phone" />
+      </div>
+      <div className="form-group">
+        <input type="text" name="childFullname" placeholder="Child's Full Name" />
+      </div>
+      <div className="form-group">
+        <input type="number" name="childAge" placeholder="Child's Age (in years)" />
+      </div>
+      <button type="submit" className="submit-btn">Submit</button>
+    </form>
+  </div>
+</div>
   );
 };
 
-export default ChoiceEn;
+export default Choice;
