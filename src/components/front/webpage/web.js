@@ -1,5 +1,4 @@
-
-import React from 'react';
+import React, { useEffect } from 'react';
 import HeaderWEB1 from '../webpage/mainWeb/Headerww';
 import AboutWEB1 from '../webpage/mainWeb/Aboutww';
 import CourseWEB1 from '../webpage/mainWeb/Courseww';
@@ -14,7 +13,11 @@ import ProcesEnWEB1 from '../webpage/ukWeb/ProcesEnww';
 import WebinarsEnWEB1 from '../webpage/ukWeb/WebinarsEnww';
 import ContactsEnWEB1 from '../webpage/ukWeb/ContactsEnww';
 
-const webPage = ({ language }) => {
+const WebPage = ({ language }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       {language === 'UA' ? (
@@ -40,4 +43,4 @@ const webPage = ({ language }) => {
   );
 };
 
-export default webPage;
+export default WebPage;

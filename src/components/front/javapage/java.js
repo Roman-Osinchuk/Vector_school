@@ -1,5 +1,4 @@
-
-import React from 'react';
+import React, { useEffect } from 'react';
 import HeaderWEB1 from '../javapage/mainJava/Headerww';
 import AboutWEB1 from '../javapage/mainJava/Aboutww';
 import CourseWEB1 from '../javapage/mainJava/Courseww';
@@ -14,7 +13,11 @@ import ProcesEnWEB1 from '../javapage/ukJava/ProcesEnww';
 import WebinarsEnWEB1 from '../javapage/ukJava/WebinarsEnww';
 import ContactsEnWEB1 from '../javapage/ukJava/ContactsEnww';
 
-const javapage = ({ language }) => {
+const Javapage = ({ language }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       {language === 'UA' ? (
@@ -40,4 +43,4 @@ const javapage = ({ language }) => {
   );
 };
 
-export default javapage;
+export default Javapage;

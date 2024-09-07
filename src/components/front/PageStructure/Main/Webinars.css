@@ -57,7 +57,7 @@ body {
 
 .webinar-card h2 {
     position: absolute;
-    top: 40%;
+    bottom: 45%;
     left: 20px;
     transform: translateY(-50%);
     color: #ffffff;

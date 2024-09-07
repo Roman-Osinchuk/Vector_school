@@ -15,12 +15,10 @@ function App() {
   };
 
   const handleWebPageClick = () => {
-    console.log('Web Page Clicked');
     setCurrentPage('webpage'); 
   };
   
   const handleJavaPageClick = () => {
-    console.log('Java Page Clicked');
     setCurrentPage('javapage'); 
   };
 

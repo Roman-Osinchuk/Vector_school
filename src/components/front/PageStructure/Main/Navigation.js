@@ -6,7 +6,7 @@ import extraIcon1 from '../../../img/header_img/mesenger-2.svg';
 import extraIcon2 from '../../../img/header_img/viber-1.svg';
 import Modal from './Modal';
 
-const Navigation = ({ language, onLanguageChange, onLogoClick, text }) => { 
+const Navigation = ({ language, onLanguageChange, onLogoClick }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -72,11 +72,13 @@ const Navigation = ({ language, onLanguageChange, onLogoClick, text }) => {
           </a>
         </div>
       </div>
+
       <div className="language-switch">
         <p onClick={onLanguageChange}>
           {language === 'EN' ? 'UA' : 'EN'} <b>{language}</b>
         </p>
       </div>
+
       <a href="tel:+380673825500" className="phone-number-link">
         <div className="contact-number">
           <div className="phone-icon-container">
@@ -85,20 +87,28 @@ const Navigation = ({ language, onLanguageChange, onLogoClick, text }) => {
           </div>
         </div>
       </a>
+
       <div className="extra-info">
         <p onClick={toggleModal}>{language === 'UA' ? 'НАПИСАТИ' : 'WRITE'}</p>
       </div>
+
       <div className={`burger-menu ${isMenuOpen ? 'open' : ''} ${isScrolled ? '' : 'disabled'}`} onClick={toggleMenu}>
         <div className="bar1"></div>
         <div className="bar2"></div>
         <div className="bar3"></div>
       </div>
-      <Modal isOpen={isModalOpen} onClose={toggleModal} text={"Виникли запитання?"} />
+
+      <Modal
+        isOpen={isModalOpen}
+        onClose={toggleModal}
+        text={language === 'UA' ? 'Виникли запитання?' : 'Have any questions?'}
+      />
+
       {showScrollTopButton && (
         <button className="scroll-top-button" onClick={scrollToTop}>↑</button>
       )}
     </nav>
   );
-}
+};
 
 export default Navigation;
