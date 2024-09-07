@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Vector_school/static/css/main.6334c090.css",
-    "main.js": "/Vector_school/static/js/main.50efb548.js",
+    "main.css": "/Vector_school/static/css/main.73323690.css",
+    "main.js": "/Vector_school/static/js/main.d8b56a18.js",
     "static/media/java-bg.png": "/Vector_school/static/media/java-bg.fdabd4e11f1235e4e8e0.png",
     "static/media/index-intro-3.jpg": "/Vector_school/static/media/index-intro-3.9103c34858a9a474a702.jpg",
     "static/media/webinar.png": "/Vector_school/static/media/webinar.3285128a41357b52091a.png",
@@ -51,11 +51,11 @@
     "static/media/circle.svg": "/Vector_school/static/media/circle.336e972bf41cf71ada98e21a05952664.svg",
     "static/media/mesenger-2.svg": "/Vector_school/static/media/mesenger-2.3506d76098ce8768127451fa26002354.svg",
     "static/media/facebook-1.svg": "/Vector_school/static/media/facebook-1.dc1f56fcb1fc0353f8cfe8d544b18540.svg",
-    "main.6334c090.css.map": "/Vector_school/static/css/main.6334c090.css.map",
-    "main.50efb548.js.map": "/Vector_school/static/js/main.50efb548.js.map"
+    "main.73323690.css.map": "/Vector_school/static/css/main.73323690.css.map",
+    "main.d8b56a18.js.map": "/Vector_school/static/js/main.d8b56a18.js.map"
   },
   "entrypoints": [
-    "static/css/main.6334c090.css",
-    "static/js/main.50efb548.js"
+    "static/css/main.73323690.css",
+    "static/js/main.d8b56a18.js"
   ]
 }
