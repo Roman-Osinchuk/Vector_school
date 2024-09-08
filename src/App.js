@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import './App.css';
-import Navigation from './components/front/PageStructure/Main/Navigation';
-import NavigationWEB from './components/front/webpage/mainWeb/Navigationww';
-import WebPage from './components/front/webpage/web';
-import JavaPage from './components/front/javapage/java'; 
-import PageStructure from './components/front/PageStructure/PageStructure';
+import Navigation from './components/front/pages/PageStructure/Main/Navigation';
+import NavigationWEB from './components/front/pages/webpage/mainWeb/Navigationww';
+import WebPage from './components/front/pages/webpage/web';
+import JavaPage from './components/front/pages/javapage/java'; 
+import PageStructure from './components/front/pages/PageStructure/PageStructure';
 
 function App() {
   const [language, setLanguage] = useState('UA'); 
