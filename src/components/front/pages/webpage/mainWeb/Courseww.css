@@ -27,8 +27,8 @@ body {
 
 .tabsT {
   display: flex;
-  justify-content: space-around; /* Розподіл простору між вкладками */
-  align-items: center; /* Вирівнювання по вертикалі */
+  justify-content: space-around; 
+  align-items: center; 
   margin: 0 auto;
   margin-bottom: 20px;
   padding: 10px;
@@ -55,12 +55,12 @@ body {
 .tabT.activeT {
   background-color: #bfff31;
   border-color: #bfff31;
-  color: #000000; /* Чорний текст на активній кнопці */
+  color: #000000; 
 }
 
 .tabT:hover {
   background-color: #bfff31;
-  color: #ffffff; /* Білий текст при наведенні */
+  color: #ffffff; 
 }
 
 
@@ -90,14 +90,14 @@ body {
 
 .programT ul,
 .learnT ul {
-  list-style-type: none; /* Видаляємо стандартні маркери списку */
-  padding-left: 20px; /* Відступ для списку */
+  list-style-type: none; 
+  padding-left: 20px; 
 }
 
 .programT ul li,
 .learnT ul li {
   position: relative;
-  padding-left: 25px; /* Відступ для іконки квадрата */
+  padding-left: 25px; 
   margin-bottom: 10px;
 }
 
@@ -109,7 +109,7 @@ body {
   left: 0;
   width: 10px;
   height: 10px;
-  background-color: rgba(50,110,180); /* Синій колір квадрата */
+  background-color: rgba(50,110,180); 
 }
 
 

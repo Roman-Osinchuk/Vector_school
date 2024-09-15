@@ -6,11 +6,11 @@ body {
 }
 
 .sectionContacts {
-    position: relative; /* Додаємо позиціювання для секції */
+    position: relative; 
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden; /* Щоб анімація не виходила за межі секції */
+    overflow: hidden;
 }
 
 .contacts-container {
@@ -32,12 +32,12 @@ body {
 }
 .links-container {
     margin-top: 10px;
-    text-align: left; /* вирівнює всі посилання по лівому краю */
+    text-align: left; 
     max-width: 80%;
   }
   
   .link {
-    display: block; /* робить кожне посилання блоковим для вертикального вирівнювання */
+    display: block; 
     text-decoration: none;
     color: black;
     padding: 5px;
@@ -88,11 +88,11 @@ body {
 
 .background-circle {
     position: absolute;
-    width: 500px; /* Розмір кола */
-    height: 450px; /* Розмір кола */
+    width: 500px; 
+    height: 450px; 
     border-radius: 50%;
     background-color: rgb(255, 255, 255);
-    top: 10%; /* Відступ зверху */
+    top: 10%; 
     left: -10%; 
     transform: translateX(-50%); 
     animation: rotate 20s linear infinite; 
@@ -205,9 +205,9 @@ footer {
     }
 
     .background-circle {
-        width: 300px; /* Зменшуємо розмір кола */
-        height: 300px; /* Зменшуємо розмір кола */
-        top: 5%; /* Коригуємо відступ зверху */
+        width: 300px;
+        height: 300px;
+        top: 5%; 
         left: 50%; 
         transform: translateX(-50%);
     }

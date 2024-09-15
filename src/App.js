@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Navigation from './components/front/pages/PageStructure/Main/Navigation';
-import NavigationWEB from './components/front/pages/webpage/mainWeb/Navigationww';
+import NavigationSecond from './components/front/pages/webpage/mainWeb/Navigationww';
 import WebPage from './components/front/pages/webpage/web';
 import JavaPage from './components/front/pages/javapage/java'; 
 import PageStructure from './components/front/pages/PageStructure/PageStructure';
@@ -31,9 +31,9 @@ function App() {
       {currentPage === 'main' ? (
         <Navigation language={language} onLanguageChange={handleLanguageChange} onLogoClick={handleLogoClick} />
       ) : currentPage === 'webpage' ? (
-        <NavigationWEB language={language} onLanguageChange={handleLanguageChange} onLogoClick={handleLogoClick} />
+        <NavigationSecond language={language} onLanguageChange={handleLanguageChange} onLogoClick={handleLogoClick} />
       ) : (
-        <NavigationWEB language={language} onLanguageChange={handleLanguageChange} onLogoClick={handleLogoClick} />
+        <NavigationSecond language={language} onLanguageChange={handleLanguageChange} onLogoClick={handleLogoClick} />
       )}
 
       {currentPage === 'main' ? (

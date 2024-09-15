@@ -8,7 +8,8 @@ import DesignImage from '../img/modul_img/figure.png';
 import Discon from '../img/modul_img/discount-icon.png';
 import EqualsIcon from '../img/modul_img/equal.svg';
 import DotIcon from '../img/modul_img/circle.svg';
-import Modal from '../../../Modal_qesion/ModalEn';
+import Modal from '../../../modul_page/ModalEnpage';
+import { courseStartDates } from '../../../Data_course/dateUtils';
 
 const Webinars = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -117,7 +118,7 @@ const Webinars = () => {
         <p>CHOOSE A CONVENIENT TIME FOR YOU</p>
         <div className="module-card">
           <div className="module-date">
-            20.02.2024
+          {courseStartDates.web}
           </div>
           <div className="module-schedule">
             <h3>Schedule</h3>

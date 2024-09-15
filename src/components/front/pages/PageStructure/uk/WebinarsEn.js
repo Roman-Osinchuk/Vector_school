@@ -2,19 +2,19 @@ import React, { useState } from 'react';
 import '../Main/Webinars.css';
 import JavaImage from '../../../../img/webinars_img/webinar-first.png';  
 import WebDevImage from '../../../../img/webinars_img/webinar.png'; 
-import Modal from '../../../Modal_qesion/ModalEn';
-import Modalq from '../../../Modal_qesion/ModalEn';
+import Modal from '../../../modul_page/ModalEnpage';
+import Modalq from '../../../modul_page/ModalEnpage';
 
 const Webinars = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isZapisOpen, setIsZapisOpen] = useState(false);
+  const [isModal1Open, setIsModal1Open] = useState(false);
 
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
   };
 
-  const toggleZapis = () => {
-    setIsZapisOpen(!isZapisOpen);
+  const toggleModal1 = () => {
+    setIsModal1Open(!isModal1Open);
   };
 
   return (
@@ -32,7 +32,7 @@ const Webinars = () => {
             <li>Create your mini-game;</li>
             <li>After the workshop, a mentor will contact your child by phone to show all the mistakes and explain why they occurred.</li>
           </ul>
-          <button onClick={toggleZapis} className="sign-up-button">Sign Up</button>
+          <button onClick={toggleModal} className="sign-up-button">Sign Up</button>
         </div>
         <div className="webinar-card">
           <div className="webinar-date">9-02-2024</div>
@@ -45,19 +45,19 @@ const Webinars = () => {
             <li>Write your first own web page;</li>
             <li>After the workshop, a mentor will contact your child by phone to show all the mistakes and explain why they occurred.</li>
           </ul>
-          <button onClick={toggleZapis} className="sign-up-button">Sign Up</button>
+          <button onClick={toggleModal} className="sign-up-button">Sign Up</button>
         </div>
       </div>
       <div className="next-webinar">
         <p>CAN'T MAKE IT ON THIS DAY AND TIME?<br /> <span className='tex'>SIGN UP</span> FOR THE NEXT MASTER CLASS!</p>
-        <button onClick={toggleZapis} className="previous-button">Call Me Back</button>
+        <button onClick={toggleModal} className="previous-button">Call Me Back</button>
       </div>
       <div className="next-quesh">
         <p>HAVE QUESTIONS?<br /> WRITE TO US AND GET A CONSULTATION</p>
-        <button onClick={toggleModal} className="previous-buttn">Write</button>
+        <button onClick={toggleModal1} className="previous-buttn">Write</button>
       </div>
-      <Modal isOpen={isModalOpen} onClose={toggleModal} />
-      <Modalq isOpen={isZapisOpen} onClose={toggleModal} />
+      <Modal isOpen={isModalOpen} onClose={toggleModal} text={"Got questions?"} />
+      <Modalq isOpen={isModal1Open} onClose={toggleModal1} text={"Fill out the form"} />
     </section>
   );
 }

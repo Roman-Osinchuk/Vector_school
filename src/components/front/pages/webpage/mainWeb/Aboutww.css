@@ -13,7 +13,7 @@
   align-items: flex-start;
   justify-content: space-between;
   width: 100%;
-  max-width: 1200px; /* Adjust as needed */
+  max-width: 1200px; 
   margin: 0 auto;
   padding: 20px;
   box-sizing: border-box;
@@ -24,10 +24,10 @@
 }
 
 .section-content1 p {
-  margin-top: 20px; /* Adjust as needed */
+  margin-top: 20px; 
 }
 .section-content1 h2{
-  margin-top: 100px; /* Adjust as needed */
+  margin-top: 100px; 
 }
 .photo1 {
   flex: 1;
@@ -66,7 +66,7 @@
   width: 100px;
   height: 100px;
   margin-bottom: 15px;
-  background-color: transparent; /* This should be redundant, as the image should not have a background */
+  background-color: transparent; 
   padding: 10px;
 }
 
@@ -89,7 +89,7 @@
   width: 100%;
   height: 30vh;
   background-color: rgba(33,100,174);
-  overflow: hidden; /* Ensures that overflow content is hidden */
+  overflow: hidden; 
 }
 
 .vector-text1 {
@@ -138,15 +138,15 @@
   justify-content: center;
   width: 150%;
   height: 150%;
-  overflow: hidden; /* Ensures that any overflow content is hidden */
+  overflow: hidden; 
   position: relative;
 }
 
 .bottom-center1 img {
   margin-right: 30%;
-  max-width: 100%; /* Ensures that the image width does not exceed its container */
-  max-height: 100%; /* Ensures that the image height does not exceed its container */
-  object-fit: cover; /* Ensures the image covers the container without distortion */
+  max-width: 100%; 
+  max-height: 100%; 
+  object-fit: cover; 
 }
 
 
@@ -244,7 +244,7 @@
 .text-wrapper {
   display: flex;
   align-items: flex-start;
-  position: relative; /* Позиціонування для абсолютного розміщення смуги */
+  position: relative; 
 }
 
 .left-bar {
@@ -254,12 +254,12 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0; /* Закріплюємо зліва */
+  left: 0; 
 }
 
 .text-wrapper p {
 margin-top: 10px;
-  margin-left: 20px; /* Відступ, щоб текст не перекривався з полосою */
+  margin-left: 20px; 
   font-size: 18px;
   line-height: 1.5;
   color: #000000;
@@ -399,22 +399,20 @@ margin-top: 10px;
     margin-right: 50px;
   }
   .text-content {
-    padding: 20px; /* Додаємо відступи для мобільних пристроїв */
+    padding: 20px; 
   }
 
   .text-wrapper {
-    padding: 10px; /* Додаємо відступи навколо тексту */
+    padding: 10px;
   }
 
   .text-content p {
-    width: 90%; /* Робимо текст трохи ширшим на мобільних пристроях */
-    font-size: 0.9rem; /* Зменшуємо розмір шрифту для кращої читабельності */
-    margin: 0 auto; /* Центруємо текст */
+   width: 90%;
+    font-size: 1rem; 
+    margin: 0 auto; 
+   
   }
 
-  .left-bar {
-    width: 5%; /* Зменшуємо ширину лівої панелі для мобільних пристроїв */
-    margin: 10px auto; /* Центруємо ліву панель */
-  }
+
  
 }

@@ -1,7 +1,7 @@
 .course-structure {
   text-align: center;
   background-color: #e2e8f0;
-  padding: 50px 0; /* Зменшено відступи */
+  padding: 50px 0; 
 }
 
 .course-structure h2 {
@@ -24,8 +24,8 @@
 .course-structure p {
   font-size: 16px;
   margin-bottom: 30px;
-  text-align: center; /* Вирівняно по центру */
-  max-width: 800px; /* Обмеження ширини тексту */
+  text-align: center; 
+  max-width: 800px; 
   margin-left: auto;
   margin-right: auto;
 }
@@ -47,12 +47,12 @@
 
 .modules-container {
   display: flex;
-  justify-content: center; /* Центрує всі модулі по горизонталі */
+  justify-content: center; 
   align-items: flex-start;
-  flex-wrap: wrap; /* Дозволяє модулям адаптуватися до зміни ширини */
-  gap: 20px; /* Збільшує відступи між модулями */
-  max-width: 100%; /* Забезпечує використання всієї доступної ширини */
-  margin: 0 auto; /* Центрує контейнер на сторінці */
+  flex-wrap: wrap; 
+  gap: 20px; 
+  max-width: 100%; 
+  margin: 0 auto; 
   padding: 20px;
 }
 
@@ -60,7 +60,7 @@
   border-radius: 10px;
   text-align: center;
   padding: 20px;
-  max-width: 270px; /* Фіксована ширина для однакових модулів */
+  max-width: 270px; 
   min-width: 270px;
   position: relative;
 }
@@ -212,10 +212,10 @@
 
 .module-schedule {
   padding: 20px;
-  display: flex; /* Вмикаємо Flexbox */
-  flex-direction: column; /* Розміщуємо елементи вертикально */
-  justify-content: flex-start; /* Вирівнювання по вертикалі */
-  align-items: flex-start; /* Вирівнювання по горизонталі */
+  display: flex; 
+  flex-direction: column; 
+  justify-content: flex-start; 
+  align-items: flex-start; 
 }
 
 .module-schedule h3 {
@@ -251,7 +251,7 @@ margin-left:15% ;
 
 .discounts {
   margin-top: 20px;
-  text-align: center; /* Вирівняння по центру */
+  text-align: center; 
 }
 
 .discounts h3 {
@@ -279,7 +279,7 @@ margin-left:15% ;
   background-color: #9ed2f7;
   border-radius: 50%;
   padding: 20px;
-  width: 200px; /* Фіксована ширина для зменшення розміру */
+  width: 200px; 
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   aspect-ratio: 1/1;
@@ -291,7 +291,7 @@ margin-left:15% ;
 }
 
 .discount-percentage {
-  font-size: 32px; /* Зменшено розмір */
+  font-size: 32px; 
   margin-top: 10px;
   margin-bottom: 5px;
   font-weight: bold;
@@ -340,7 +340,7 @@ margin-left:15% ;
   padding: 15px 30px;
   border: none;
   margin-right: 80px;
-  border-radius: 50px; /* Змінено для відповідності формі кнопки */
+  border-radius: 50px; 
   cursor: pointer;
   font-size: 1em;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -348,7 +348,7 @@ margin-left:15% ;
 }
 
 .previous-buttn:hover {
-  background-color: #f0f0f0; /* Додано для ефекту при наведенні */
+  background-color: #f0f0f0; 
 }
 
 
@@ -356,12 +356,12 @@ margin-left:15% ;
  
 .modules-container {
   display: flex;
-  justify-content: center; /* Центрує всі модулі по горизонталі */
+  justify-content: center; 
   align-items: flex-start;
-  flex-wrap: wrap; /* Дозволяє модулям адаптуватися до зміни ширини */
-  gap: 20px; /* Збільшує відступи між модулями */
-  max-width: 100%; /* Забезпечує використання всієї доступної ширини */
-  margin: 0 auto; /* Центрує контейнер на сторінці */
+  flex-wrap: wrap; 
+  gap: 20px; 
+  max-width: 100%; 
+  margin: 0 auto; 
   padding: 20px;
 }
 
@@ -369,7 +369,7 @@ margin-left:15% ;
   border-radius: 10px;
   text-align: center;
   padding: 20px;
-  max-width: 270px; /* Фіксована ширина для однакових модулів */
+  max-width: 270px; 
   min-width: 270px;
   position: relative;
 }
@@ -402,7 +402,7 @@ margin-left:15% ;
   width: 100px;
   height: 100px;
   z-index: 4;
-  margin: 0 auto 15px auto; /* Центрування іконки та відступ знизу */
+  margin: 0 auto 15px auto; 
 }
 
 .module-icon img {
@@ -428,7 +428,7 @@ margin-left:15% ;
 
 .bol {
   font-weight: bold;
-  margin-bottom: 20px; /* Зменшено відступ знизу для рівномірності */
+  margin-bottom: 20px; 
 }
 
 .module .price {
@@ -444,43 +444,43 @@ margin-left:15% ;
     font-size: 0.5em;
   }
   .summary-item {
-    margin-right: 10px; /* Add spacing between items */
+    margin-right: 10px; 
   }
 
   .schedule, .discounts, .next-quesh {
-    text-align: center; /* Center text for better readability on smaller screens */
-    margin: 10px 0; /* Reduce margin for mobile */
+    text-align: center; 
+    margin: 10px 0; 
   }
 
   .design-image-container,
   .design-image-containerflipped {
-    display: none; /* Hide design images on mobile */
+    display: none; 
   }
-  /* Centering the headings and paragraph */
+  
 .course-structure h2,
 .course-structure h3,
 .course-structure p {
-  text-align: center; /* Centers the text */
-  margin: 0 auto; /* Centers the element block */
+  text-align: center; 
+  margin: 0 auto; 
 }
 .course-structure h3{
   margin-bottom: 50px;
 }
   .module-details {
-    text-align: left; /* Align text to the left for better readability */
+    text-align: left; 
   }
 
   .discounts-container {
-    flex-direction: column; /* Stack discounts vertically */
+    flex-direction: column; 
   }
 
   .discount-item {
-    margin-bottom: 15px; /* Add spacing between discount items */
+    margin-bottom: 15px; 
   }
   
   .next-quesh button {
-    width: 100%; /* Make the button full width */
-    padding: 10px 0; /* Add padding for better touch targets */
+    width: 100%; 
+    padding: 10px 0; 
   }
   .module-card{
 margin-left: 10%;   

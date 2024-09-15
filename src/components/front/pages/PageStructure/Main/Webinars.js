@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import './Webinars.css';
 import JavaImage from '../../../../img/webinars_img/webinar-first.png';  
 import WebDevImage from '../../../../img/webinars_img/webinar.png'; 
-import Modal from '../../../Modal_qesion/Modal';
-import Modal1 from '../../../Modal_qesion/Modal';
+import Modal from '../../../modul_page/Modalpage';
+import Modal1 from '../../../modul_page/Modalpage';
 
 
 const Webinars = () => {

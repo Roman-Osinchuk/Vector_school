@@ -4,7 +4,8 @@ import logo from '../../../../img/header_img/logo.png';
 import phoneIcon from '../../../../img/header_img/phone-call.svg';
 import extraIcon1 from '../../../../img/header_img/mesenger-2.svg';
 import extraIcon2 from '../../../../img/header_img/viber-1.svg';
-import Modal from '../../../Modal_qesion/Modal';
+import Modal from '../../../Navigation_Modal_qesion/Modal';
+import Modalen from '../../../Navigation_Modal_qesion/ModalEn';
 
 const Navigation1 = ({ language, onLanguageChange, onLogoClick }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -98,13 +99,26 @@ const Navigation1 = ({ language, onLanguageChange, onLogoClick }) => {
         <div className="bar3"></div>
       </div>
 
-      <Modal isOpen={isModalOpen} onClose={toggleModal} />
+      
+      {language === 'UA' ? (
+        <Modal
+          isOpen={isModalOpen}
+          onClose={toggleModal}
+          text="Виникли запитання?"
+        />
+      ) : (
+        <Modalen
+          isOpen={isModalOpen}
+          onClose={toggleModal}
+          text="Have any questions?"
+        />
+      )}
 
       {showScrollTopButton && (
         <button className="scroll-top-button" onClick={scrollToTop}>↑</button>
       )}
     </nav>
   );
-}
+};
 
 export default Navigation1;

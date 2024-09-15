@@ -1,52 +1,51 @@
 import React, { useState } from 'react';
-import './Modal.css';
+import '../Navigation_Modal_qesion/Modal.css';
 
-const Modal = ({ isOpen, onClose, text }) => {
-  const [name, setName] = useState('');
-  const [phone, setPhone] = useState('');
-  const [email, setEmail] = useState('');
-  const [comment, setComment] = useState('');
+const Modals = ({ isOpen, onClose, text }) => {
+  const [formData, setFormData] = useState({
+    name: '',
+    phone: '',
+    email: '',
+    comment: '',
+  });
   const [isFormValid, setIsFormValid] = useState(false);
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+
+    const { name: fName, phone, email, comment } = formData;
+    setIsFormValid(fName && phone && email && comment);
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     const formURL = '#'; 
-    const formData = new URLSearchParams();
-    formData.append('entry.2005680554', name);  
-    formData.append('entry.1166944658', phone);
-    formData.append('entry.1045701291', email); 
-    formData.append('entry.839336160', comment); 
+    const submissionData = new URLSearchParams();
+    submissionData.append('entry.2005680554', formData.name);
+    submissionData.append('entry.1166944658', formData.phone);
+    submissionData.append('entry.1045701291', formData.email);
+    submissionData.append('entry.839336160', formData.comment);
 
     try {
       const response = await fetch(formURL, {
         method: 'POST',
-        body: formData,
+        body: submissionData,
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
         },
       });
 
       console.log('Form submitted successfully:', response);
-      setName('');
-      setPhone('');
-      setEmail('');
-      setComment('');
+      setFormData({ name: '', phone: '', email: '', comment: '' });
       onClose();
     } catch (error) {
       console.error('Error submitting form:', error);
     }
-  };
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    
-    if (name === 'name') setName(value);
-    if (name === 'phone') setPhone(value);
-    if (name === 'email') setEmail(value);
-    if (name === 'comment') setComment(value);
-
-    setIsFormValid(name !== '' && phone !== '' && email !== '' && comment !== '');
   };
 
   if (!isOpen) return null;
@@ -58,58 +57,52 @@ const Modal = ({ isOpen, onClose, text }) => {
           <div className="form-group">
             <span className="close" onClick={onClose}>&times;</span>
             <h2>{text}</h2>
-            <label htmlFor="name"></label>
             <input
               type="text"
-              id="name"
               name="name"
-              placeholder="Ім'я:"
-              value={name}
+              placeholder="Name:"
+              value={formData.name}
               onChange={handleInputChange}
               required
             />
           </div>
           <div className="form-group">
-            <label htmlFor="phone"></label>
             <input
               type="tel"
-              id="phone"
               name="phone"
-              placeholder="Телефон:"
-              value={phone}
+              placeholder="Phone:"
+              value={formData.phone}
               onChange={handleInputChange}
               required
             />
           </div>
           <div className="form-group">
-            <label htmlFor="email"></label>
             <input
               type="email"
-              id="email"
               name="email"
-              placeholder="Ваш email:"
-              value={email}
+              placeholder="Your email:"
+              value={formData.email}
               onChange={handleInputChange}
               required
             />
           </div>
           <div className="form-group">
-            <label htmlFor="comment"></label>
             <textarea
-              id="comment"
               name="comment"
-              placeholder="Коментар"
-              value={comment}
+              placeholder="Comment"
+              value={formData.comment}
               onChange={handleInputChange}
               rows="4"
               required
             ></textarea>
           </div>
-          <button type="submit" className="submit-btn" disabled={!isFormValid}>Відправити</button>
+          <button type="submit" className="submit-btn" disabled={!isFormValid}>
+            Submit
+          </button>
         </form>
       </div>
     </div>
   );
 };
 
-export default Modal;
+export default Modals;

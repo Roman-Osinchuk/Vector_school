@@ -4,8 +4,12 @@ import courseImage from '../../../../img/course_img/java-bg.png';
 import javaImage from '../../../../img/course_img/java-img.png'; 
 import coursImage from '../../../../img/course_img/p-4.png'; 
 import webImage from '../../../../img/course_img/web.png'; 
+import { calculateDaysLeft, courseStartDates } from '../../../Data_course/dateUtils';
 
 const Course = ({ onWebPageClick, onJavaPageClick }) => {
+  const javaDaysLeft = calculateDaysLeft(courseStartDates.java);
+  const webDaysLeft = calculateDaysLeft(courseStartDates.web);
+
   return (
     <section id="course" className="sectionCourse">
       <div className="course-container">
@@ -14,7 +18,7 @@ const Course = ({ onWebPageClick, onJavaPageClick }) => {
             <img src={courseImage} alt="Course" />
             <div>
               <h2>ОСНОВИ ПРОГРАМУВАННЯ<br /> МОВОЮ JAVA ДЛЯ ШКОЛЯРІВ</h2>
-              <p>Дата старту <span className="start-date">16-02-2024</span></p>
+              <p>Дата старту <span className="start-date">{courseStartDates.java}</span></p>
             </div>
           </div>
           <img src={javaImage} alt="Java" className="java-image" />
@@ -41,7 +45,7 @@ const Course = ({ onWebPageClick, onJavaPageClick }) => {
           </div>
         </div>
         <div className="course-footer">
-          <p><strong>ПОСПІШАЙТЕ</strong><br />Старт нового курсу через <span className="days-left">0 днів</span></p>
+          <p><strong>ПОСПІШАЙТЕ</strong><br />Старт нового курсу через <span className="days-left"><span className="start-date">{javaDaysLeft}</span> дні</span></p>
           <button className="course-button" onClick={onJavaPageClick}>Детальніше</button>
         </div>
       </div>
@@ -52,7 +56,7 @@ const Course = ({ onWebPageClick, onJavaPageClick }) => {
             <img src={webImage} alt="Course" />
             <div>
               <h2>WEB-РОЗРОБКА ДЛЯ ШКОЛЯРІВ</h2>
-              <p>Дата старту <span className="start-date">9-02-2024</span></p>
+              <p>Дата старту <span className="start-date">{courseStartDates.web}</span></p>
             </div>
           </div>
           <img src={coursImage} alt="Java" className="java-image" />
@@ -73,7 +77,7 @@ const Course = ({ onWebPageClick, onJavaPageClick }) => {
           </div>
         </div>
         <div className="course-footer">
-          <p><strong>ПОСПІШАЙТЕ</strong><br />Старт нового курсу через <span className="days-left">0 днів</span></p>
+          <p><strong>ПОСПІШАЙТЕ</strong><br />Старт нового курсу через <span className="days-left"><span className="start-date">{webDaysLeft}</span> дні</span></p>
           <button className="course-button" onClick={onWebPageClick}>Детальніше</button>
         </div>
       </div>

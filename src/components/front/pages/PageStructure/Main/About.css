@@ -148,7 +148,7 @@ border-radius: 8px;
   width: 100%;
   height: 30vh;
   background-color: rgba(33,100,174);
-  overflow: hidden; /* Ensures that overflow content is hidden */
+  overflow: hidden; 
 }
 
 .vector-text {
@@ -197,15 +197,15 @@ border-radius: 8px;
   justify-content: center;
   width: 150%;
   height: 150%;
-  overflow: hidden; /* Ensures that any overflow content is hidden */
+  overflow: hidden;
   position: relative;
 }
 
 .bottom-center img {
   margin-right: 30%;
-  max-width: 100%; /* Ensures that the image width does not exceed its container */
-  max-height: 100%; /* Ensures that the image height does not exceed its container */
-  object-fit: cover; /* Ensures the image covers the container without distortion */
+  max-width: 100%; 
+  max-height: 100%; 
+  object-fit: cover; 
 }
 
 

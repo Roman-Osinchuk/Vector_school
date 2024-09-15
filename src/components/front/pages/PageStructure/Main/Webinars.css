@@ -76,7 +76,7 @@ body {
 .webinar-card ul li {
     margin-bottom: 5px;
     position: relative;
-    padding-left: 30px; /* відступ для маркерів */
+    padding-left: 30px; 
 }
 
 .webinar-card ul li::before {
@@ -122,7 +122,7 @@ body {
 .next-quesh p {
     font-size: 1.5em;
     margin-left:80px;
-    color: #000; /* Чорний колір для тексту */
+    color: #000;
 }
 
 
@@ -132,10 +132,10 @@ body {
     padding: 30px 60px;
     border: none;
     margin-right: 80px;
-    border-radius: 50px; /* Змінено для відповідності формі кнопки на зображенні */
+    border-radius: 50px; 
     cursor: pointer;
     font-size: 1em;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Додано тінь для кнопки */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .previous-button:hover {
@@ -147,7 +147,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
     padding: 20px;
-    max-width: 90%; /* Змінено для адаптації до розміру зображення */
+    max-width: 90%; 
     text-align: left;
     display: flex;
     justify-content: space-between;
@@ -157,7 +157,7 @@ body {
 .next-webinar p {
     font-size: 1.5em;
     margin: 0;
-    color: #000; /* Чорний колір для тексту */
+    color: #000; 
 }
 
 .next-webinar .tex {
@@ -213,10 +213,10 @@ body {
         padding: 20px 40px;
         border: none;
         margin-left: 24%;
-        border-radius: 50px; /* Змінено для відповідності формі кнопки на зображенні */
+        border-radius: 50px; 
         cursor: pointer;
         font-size: 1em;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Додано тінь для кнопки */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     }
 .sign-up-button{
     margin-left: 25%;
